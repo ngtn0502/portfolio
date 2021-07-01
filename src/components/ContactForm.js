@@ -6,7 +6,7 @@ function ContactForm() {
   return (
     <>
       <Wrapper2 className="container">
-        <div className="contact__title title">
+        <div className="title">
           <span>get in touch</span>
           <h2>CONTACT</h2>
         </div>
