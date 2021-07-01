@@ -1,10 +1,13 @@
 import React from 'react';
+import ContactForm from '../components/ContactForm.js';
+import ContactMap from '../components/ContactMap.js';
 
 function ContactPage() {
   return (
-    <div>
-      <h1>Contact Page</h1>
-    </div>
+    <>
+      <ContactForm />
+      <ContactMap />
+    </>
   );
 }
 export default ContactPage;

@@ -1,4 +1,15 @@
 import { v4 as uuidv4 } from 'uuid';
+import {
+  FaFacebookSquare,
+  FaGithubSquare,
+  FaTwitterSquare,
+  FaLinkedin,
+} from 'react-icons/fa';
+import { BsPhone } from 'react-icons/bs';
+import { IoMailOutline } from 'react-icons/io5';
+
+import { BiMap } from 'react-icons/bi';
+
 import gInterior from '../assets/images/gInterior.PNG';
 
 export const projects = [
@@ -86,5 +97,50 @@ export const media = [
     id: 2,
     text: 'git',
     url: 'https://github.com/ngtn0502',
+  },
+];
+
+export const socials = [
+  {
+    id: 1,
+    text: 'fb',
+    url: 'https://www.facebook.com/thanhnhan99s/',
+    image: <FaFacebookSquare />,
+  },
+  {
+    id: 2,
+    text: 'git',
+    url: 'https://github.com/ngtn0502',
+    image: <FaGithubSquare />,
+  },
+  {
+    id: 2,
+    text: 'git',
+    url: 'https://github.com/ngtn0502',
+    image: <FaTwitterSquare />,
+  },
+  {
+    id: 2,
+    text: 'git',
+    url: 'https://github.com/ngtn0502',
+    image: <FaLinkedin />,
+  },
+];
+
+export const contacts = [
+  {
+    id: 1,
+    text: '+0948163138',
+    image: <BsPhone />,
+  },
+  {
+    id: 2,
+    text: 'ngthn0502@gmail.com',
+    image: <IoMailOutline />,
+  },
+  {
+    id: 2,
+    text: '10 District, HCM City',
+    image: <BiMap />,
   },
 ];

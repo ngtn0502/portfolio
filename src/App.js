@@ -5,29 +5,34 @@ import AboutPage from './pages/AboutPage.js';
 import ProjectPage from './pages/ProjectPage.js';
 import ContactPage from './pages/ContactPage.js';
 import NavBar from './components/NavBar';
+import SmoothScrolling from './components/SmoothScrolling';
+import Footer from './components/Footer.js';
 
 function App() {
   return (
     <>
       <Router>
         <NavBar />
-        <Switch>
-          <Route path="/" exact>
-            <HomePage />
-          </Route>
-          <Route path="/about">
-            <AboutPage />
-          </Route>
-          <Route path="/project">
-            <ProjectPage />
-          </Route>
-          <Route path="/contact">
-            <ContactPage />
-          </Route>
-          <Route path="*">
-            <HomePage />
-          </Route>
-        </Switch>
+        <SmoothScrolling>
+          <Switch>
+            <Route path="/" exact>
+              <HomePage />
+            </Route>
+            <Route path="/about">
+              <AboutPage />
+            </Route>
+            <Route path="/project">
+              <ProjectPage />
+            </Route>
+            <Route path="/contact">
+              <ContactPage />
+            </Route>
+            <Route path="*">
+              <HomePage />
+            </Route>
+          </Switch>
+          <Footer />
+        </SmoothScrolling>
       </Router>
     </>
   );

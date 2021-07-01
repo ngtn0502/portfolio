@@ -12,15 +12,14 @@ export default function HomeHero() {
     <Wrapper className="page container">
       <div className="hero__title">
         <span>Hello, this is</span>
-        <span className="hero__title__name">Nhan Nguyen</span>
+        <h2 className="hero__title__name">Nhan Nguyen</h2>
       </div>
       <div className="hero__img">
         <img src={heroPicture} alt="person" />
       </div>
       <div className="hero__infor">
         <HomteInfor>
-          I am self learning front end developer for 4 months. I love to make
-          website for the people.
+          I design and code beautifully simple things, and I love what I do.
         </HomteInfor>
         <div className=" hero__btn">
           <Link to="/project" className="btn">
@@ -58,16 +57,15 @@ const Wrapper = styled.main`
   padding: 10rem 0;
   .hero__title {
     text-align: center;
-    font-size: 2rem;
     position: relative;
     top: 2rem;
-    span {
-      display: inline-block;
-      width: 100%;
-    }
+
     .hero__title__name {
       font-size: 4rem;
       color: var(--white);
+      h2 {
+        margin: 0;
+      }
     }
   }
   .hero__img {
@@ -92,11 +90,11 @@ const Wrapper = styled.main`
     gap: 2rem;
   }
   .hero__social {
-    left: -3rem;
+    left: -4rem;
     bottom: 0rem;
   }
   .hero__scrollDown {
-    right: -3rem;
+    right: -4rem;
     bottom: -10rem;
     img {
       max-height: 8rem;
@@ -146,7 +144,7 @@ const Wrapper = styled.main`
       height: 600px;
     }
     .hero__infor {
-      margin-top: -28rem;
+      margin-top: -25rem;
     }
     .hero__title {
       top: 4rem;

@@ -26,7 +26,8 @@ Variables
   html{
     font-size: 10px;
     font-family: 'Roboto Mono';
-    background-color: var(--dark-bg);
+    background-color: var(--dark-bg);  
+    scroll-behavior: smooth;
   }
   ul,li{
     list-style: none;
@@ -42,6 +43,60 @@ Variables
   button{
     outline: none
   }
+
+span{
+  font-size: 2rem;
+      display: inline-block;
+      width: 100%;
+}
+
+h1,h3,h4,h5{
+  margin: 1rem 0;
+  font-weight: bold;
+}
+
+.title{
+  text-align: center;
+  span{
+    font-size: 1.5rem;
+      display: inline-block;
+      width: 100%;  
+
+  }
+  h2{
+    font-weight: bold;    
+    font-family: "Montserrat Bold";
+    font-size: 5rem;
+    margin-top: 0.5rem;
+    text-transform: uppercase;
+  }
+}
+
+.form{
+  width: 100%;
+  margin: 3rem 0;
+  label{
+    font-size: 2rem;
+  }
+  textarea,
+  input{
+    width: 100%;
+    font-size: 2rem;
+    padding: 1.2rem;
+    color: var(--gray-1);
+    background-color: var(--deep-dark);
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    margin-top: 1rem;
+
+  }
+  textarea{
+    height: 20rem;
+  }
+}
+
+
   .container {
     max-width: 1200px;
     width: 90%;
@@ -56,22 +111,40 @@ Variables
     background-color: var(--gray-1);
     padding: 0.7em 2em;
     border: 2px solid transparent;
-    border-radius: 8px;
+    border-radius: var(--radius);
     display: inline-block;
     color: black;
     transition: var(--transition);
+    cursor: pointer;
 
-}
-.btn:hover {
-  color: var(--gray-1);
-  background: var(--deep-dark);
-}
+  }
+  .btn:hover {
+    color: var(--gray-1);
+    background: var(--deep-dark);
+  }
+  .btn2{
+    font-size: 2rem;
+    background: transparent;
+    padding: 0.7em 2em;
+    border: 2px solid var(--gray-1);
+    border-radius: var(--radius);
+    display: inline-block;
+    color: var(--gray-1);
+    transition: var(--transition);
+  }
+
+  hr{
+    border: none;
+    border-bottom: 2px solid var(--gray-1);
+    width: 100%;
+  }
+ 
 
 /* Smooth Scroll  */
   [data-scrollbar] {
     height: 100vh;
     overflow: hidden;
-    background-color: var(--gray-1);
+    /* background-color: var(--gray-1); */
     .scroll-content {
       background-color: var(--dark-bg);
     }
