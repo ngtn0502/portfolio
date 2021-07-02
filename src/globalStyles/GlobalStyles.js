@@ -55,6 +55,12 @@ h1,h3,h4,h5{
   font-weight: bold;
 }
 
+p{
+  font-size: 1.5rem;
+  padding: 0.25rem;
+  line-height: 2.5rem;
+}
+
 .title{
   text-align: center;
   span{

@@ -16,7 +16,7 @@ export default function NavBar() {
   };
 
   return (
-    <NavContainer className="container">
+    <NavContainer className="containerNav">
       <button
         type="button"
         className="toggle__btn"
@@ -58,9 +58,13 @@ const NavContainer = styled.nav`
   right: 0;
   height: 7rem;
   z-index: 100;
-
   background-color: var(--dark-bg);
 
+  .containerNav {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
   .toggle__btn {
     position: absolute;
     right: 1rem;

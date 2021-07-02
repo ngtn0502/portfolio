@@ -11,7 +11,7 @@ export default function HomeHero() {
   return (
     <Wrapper className="page container">
       <div className="hero__title">
-        <span>Hello, this is</span>
+        <span>hello, this is</span>
         <h2 className="hero__title__name">Nhan Nguyen</h2>
       </div>
       <div className="hero__img">
