@@ -4,10 +4,7 @@ import SwiperCore, { EffectCube, Pagination, Autoplay } from 'swiper/core';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 import styled from 'styled-components';
-// import JS from '../assets/images/JS.svg';
-// import HTML5 from '../assets/images/HTML5.svg';
-// import CSS3 from '../assets/images/CSS3.svg';
-// import ReactJS from '../assets/images/ReactJS.svg';
+
 import JS from '../assets/images/JS.jpg';
 import HTML5 from '../assets/images/HTML5.png';
 import CSS3 from '../assets/images/CSS3.png';

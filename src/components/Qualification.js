@@ -38,16 +38,18 @@ function AboutPage() {
             <div className="qualification__line" />
           </div>
           <div className="data2">
-            <h2 className="qualification__title">Your Company</h2>
-            <p className="qualification__subTitle">Front End Developer</p>
-            <p className="qualification__date">2021-now</p>
+            <h2 className="qualification__title">
+              Lorem ipsum dolor sit amet.
+            </h2>
+            <p className="qualification__subTitle">Lorem, ipsum dolor.</p>
+            <p className="qualification__date">1999-unknown</p>
           </div>
         </div>
         <div className="qualification__data">
           <div className="data">
-            <h2 className="qualification__title">Cybersoft</h2>
-            <p className="qualification__subTitle">Front End Developer</p>
-            <p className="qualification__date">2021-now</p>
+            <h2 className="qualification__title">Self Learner</h2>
+            <p className="qualification__subTitle">Udemy / Internet</p>
+            <p className="qualification__date">2021-forever</p>
           </div>
           <div>
             <div className="qualification__rounder" />
@@ -60,12 +62,11 @@ function AboutPage() {
             <div className="qualification__rounder" />
             <div className="qualification__line" />
           </div>
+
           <div className="data2">
-            <h2 className="qualification__title">
-              Lorem ipsum dolor sit amet.
-            </h2>
-            <p className="qualification__subTitle">Lorem, ipsum dolor.</p>
-            <p className="qualification__date">1999-unknown</p>
+            <h2 className="qualification__title">You will fill it...</h2>
+            <p className="qualification__subTitle">Front End Developer</p>
+            <p className="qualification__date">2021-now</p>
           </div>
         </div>
       </div>
@@ -73,16 +74,21 @@ function AboutPage() {
   );
 }
 const Wrapper = styled.div`
+  h1 {
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 2.5rem;
+  }
   p {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
   .qualification__cat {
     display: flex;
     justify-content: space-evenly;
-    margin: 5rem 0;
+    margin: 3rem 0;
     h2 {
-      color: var(--white);
-      font-size: 1.5rem;
+      font-size: 1.3rem;
       display: flex;
       align-items: center;
       justify-content: center;

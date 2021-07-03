@@ -145,6 +145,14 @@ p{
     width: 100%;
   }
  
+ .category{
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 2.5rem;
+    position: relative;
+  }
+  
 
 /* Smooth Scroll  */
   [data-scrollbar] {

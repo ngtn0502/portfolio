@@ -4,8 +4,22 @@ import SwiperCore, { Navigation } from 'swiper/core';
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
+// For title
 import { BiCodeAlt } from 'react-icons/bi';
 import { HiViewGrid } from 'react-icons/hi';
+// For button
+import { GrReactjs } from 'react-icons/gr';
+import { DiCss3 } from 'react-icons/di';
+import {
+  SiReactrouter,
+  SiHtml5,
+  SiStyledComponents,
+  SiJavascript,
+  SiBootstrap,
+  SiJquery,
+  SiGithub,
+} from 'react-icons/si';
+import { AiFillApi } from 'react-icons/ai';
 
 import gInterior from '../assets/images/gInterior.PNG';
 import corpVision from '../assets/images/corpVision.PNG';
@@ -77,24 +91,27 @@ export default function App() {
               <div className="techStack">
                 <button type="button" className="btn2">
                   ReactJS
+                  <GrReactjs />
                 </button>
                 <button type="button" className="btn2">
                   CSS3
+                  <DiCss3 />
                 </button>
                 <button type="button" className="btn2">
                   React Router
-                </button>
-                <button type="button" className="btn2">
-                  CSS3
+                  <SiReactrouter />
                 </button>
                 <button type="button" className="btn2">
                   HTML5
+                  <SiHtml5 />
                 </button>
                 <button type="button" className="btn2">
                   Public API
+                  <AiFillApi />
                 </button>
                 <button type="button" className="btn2">
                   Styled Component
+                  <SiStyledComponents />
                 </button>
               </div>
             </div>
@@ -143,18 +160,23 @@ export default function App() {
               <div className="techStack">
                 <button type="button" className="btn2">
                   JavaScript
+                  <SiJavascript />
                 </button>
                 <button type="button" className="btn2">
                   CSS3
+                  <DiCss3 />
                 </button>
                 <button type="button" className="btn2">
                   Bootstrap4
+                  <SiBootstrap />
                 </button>
                 <button type="button" className="btn2">
                   HTML5
+                  <SiHtml5 />
                 </button>
                 <button type="button" className="btn2">
                   Jquery
+                  <SiJquery />
                 </button>
               </div>
             </div>
@@ -192,7 +214,7 @@ export default function App() {
                 This website allow people searching for specific Github User and
                 provide a overview informative chart about this user.
               </p>
-              <h2>
+              <h2 className="techStack__title">
                 <span>
                   <BiCodeAlt />
                 </span>
@@ -201,18 +223,23 @@ export default function App() {
               <div className="techStack">
                 <button type="button" className="btn2">
                   ReactJS
+                  <GrReactjs />
                 </button>
                 <button type="button" className="btn2">
                   HTML5
+                  <SiHtml5 />
                 </button>
                 <button type="button" className="btn2">
                   Github API
+                  <SiGithub />
                 </button>
                 <button type="button" className="btn2">
                   React Router
+                  <SiReactrouter />
                 </button>
                 <button type="button" className="btn2">
                   Styled Component
+                  <SiStyledComponents />
                 </button>
               </div>
             </div>
@@ -226,7 +253,6 @@ export default function App() {
 const Wrapper = styled.div`
   .project__brief {
     h2 {
-      color: var(--white);
       font-size: 2rem;
       display: flex;
       align-items: center;
@@ -259,7 +285,6 @@ const Wrapper = styled.div`
   .project__info {
     h2 {
       font-size: 2rem;
-      color: var(--white);
       font-family: 'Montserrat Bold';
     }
   }
@@ -295,7 +320,7 @@ const Wrapper = styled.div`
     display: block !important;
     margin: 5rem;
     h2 {
-      margin: 1.5rem 0;
+      margin: 2rem 0;
     }
     .techStack {
       display: flex;
@@ -306,6 +331,15 @@ const Wrapper = styled.div`
         font-size: 1.5rem;
         padding: 0.5em 1.5em;
       }
+    }
+  }
+  .btn2 {
+    display: flex;
+    align-items: center;
+    svg {
+      margin-left: 1rem;
+      width: 2.5rem;
+      height: 2.5rem;
     }
   }
   @media (min-width: 920px) {
@@ -319,6 +353,9 @@ const Wrapper = styled.div`
     .btn {
       padding: 0.7em 2em;
       font-size: 1.5rem;
+    }
+    .techStack__title {
+      margin-top: 2rem;
     }
   }
 `;
