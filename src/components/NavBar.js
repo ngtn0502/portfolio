@@ -33,7 +33,13 @@ export default function NavBar() {
                 navLink === link.id ? 'nav__link active' : 'nav__link'
               }`}
             >
-              <Link to={link.url} onClick={() => setNavLink(link.id)}>
+              <Link
+                to={link.url}
+                onClick={() => {
+                  setIsSideBar(false);
+                  return setNavLink(link.id);
+                }}
+              >
                 {link.text}
               </Link>
             </li>

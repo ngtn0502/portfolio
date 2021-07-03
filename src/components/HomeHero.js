@@ -6,12 +6,13 @@ import HomteInfor from './HomeInfor';
 import SocialMediaArrow from '../assets/images/social-media-arrow.svg';
 import ScrollDown from '../assets/images/scroll-down-arrow.svg';
 import { media } from '../utils/constant.js';
+import TypedReactHooksDemo from './Typed';
 
 export default function HomeHero() {
   return (
     <Wrapper className="page container">
       <div className="hero__title">
-        <span>hello, this is</span>
+        <TypedReactHooksDemo string="hello, this is" />
         <h2 className="hero__title__name">Nhan Nguyen</h2>
       </div>
       <div className="hero__img">

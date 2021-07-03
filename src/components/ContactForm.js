@@ -1,13 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
 import { contacts } from '../utils/constant.js';
+import TypedReactHooksDemo from './Typed';
 
 function ContactForm() {
   return (
     <>
       <Wrapper2 className="container">
         <div className="title">
-          <span>get in touch</span>
+          <TypedReactHooksDemo string="get in touch" />
           <h2>CONTACT</h2>
         </div>
       </Wrapper2>
@@ -53,6 +54,11 @@ function ContactForm() {
 const Wrapper2 = styled.div`
   padding-top: 10rem;
   padding-bottom: 5rem;
+  .title {
+    span {
+      display: inline;
+    }
+  }
 `;
 
 const Wrapper = styled.main`

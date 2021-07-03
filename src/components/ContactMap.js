@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import contactMap from '../assets/images/contactMap.jpg';
 
 function ContactMap() {
   return (
@@ -27,8 +26,10 @@ function ContactMap() {
 }
 
 const Wrapper = styled.div`
-  margin-top: 10rem;
   position: relative;
+  .contact__img {
+    margin-top: 10rem;
+  }
   iframe {
     width: 100%;
     border-radius: var(--radius);
@@ -45,7 +46,7 @@ const Wrapper = styled.div`
   }
   .map__form {
     position: absolute;
-    padding: 2rem 3rem;
+    padding: 1.5rem 2rem;
     border-radius: var(--radius);
     background-color: var(--deep-dark);
     top: 50%;
@@ -54,13 +55,23 @@ const Wrapper = styled.div`
     z-index: 101;
     .form__content {
       h2 {
-        font-size: 3rem;
+        font-size: 2rem;
         color: var(--white);
       }
       span {
-        font-size: 2rem;
+        font-size: 1.5rem;
         color: var(--white);
         margin-bottom: 1rem;
+      }
+    }
+  }
+  @media (min-width: 920px) {
+    .form__content {
+      h2 {
+        font-size: 3rem;
+      }
+      span {
+        font-size: 2rem;
       }
     }
   }
