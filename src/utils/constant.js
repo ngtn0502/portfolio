@@ -7,9 +7,22 @@ import {
 } from 'react-icons/fa';
 import { BsPhone } from 'react-icons/bs';
 import { IoMailOutline } from 'react-icons/io5';
+import { AiOutlineCheckSquare, AiFillApi } from 'react-icons/ai';
 
 import { BiMap } from 'react-icons/bi';
 
+import { GrReactjs } from 'react-icons/gr';
+import { DiCss3 } from 'react-icons/di';
+import {
+  SiReactrouter,
+  SiHtml5,
+  SiStyledComponents,
+  SiJavascript,
+  SiBootstrap,
+  SiJquery,
+  SiGithub,
+  SiMicrosoft,
+} from 'react-icons/si';
 import gInterior from '../assets/images/gInterior.PNG';
 
 export const projects = [
@@ -114,13 +127,13 @@ export const socials = [
     image: <FaGithubSquare />,
   },
   {
-    id: 2,
+    id: 3,
     text: 'git',
     url: 'https://github.com/ngtn0502',
     image: <FaTwitterSquare />,
   },
   {
-    id: 2,
+    id: 4,
     text: 'git',
     url: 'https://github.com/ngtn0502',
     image: <FaLinkedin />,
@@ -139,7 +152,7 @@ export const contacts = [
     image: <IoMailOutline />,
   },
   {
-    id: 2,
+    id: 3,
     text: '10 District, HCM City',
     image: <BiMap />,
   },
@@ -153,7 +166,14 @@ export const educationalList = [
     subTitlt: 'Civil Engineering',
   },
   {
-    id: 1,
+    id: 2,
+    date: '2019',
+    title: 'TOEIC (800/990)',
+    subTitlt: 'IIG Vietnam',
+    sub: 'Certificate of reading and listening English proficiency ',
+  },
+  {
+    id: 3,
     date: '1999-forever',
     title: 'Autodidact (Self-Learner)',
     subTitlt: 'Udemy / Google / Internet',
@@ -167,9 +187,87 @@ export const worksList = [
     subTitlt: 'Front End Developer',
   },
   {
-    id: 1,
+    id: 2,
     date: '2021-present',
     title: 'You will fill it...',
     subTitlt: 'Web Developer',
+  },
+];
+
+export const advantages = [
+  {
+    id: 1,
+    text: 'Great at verbal and written communication skills in English',
+    svg: <AiOutlineCheckSquare />,
+  },
+  {
+    id: 2,
+    text: 'Strong self learning and problem solving skill',
+    svg: <AiOutlineCheckSquare />,
+  },
+  {
+    id: 2,
+    text: 'Able to work under pressure and willing to work overtime',
+    svg: <AiOutlineCheckSquare />,
+  },
+  {
+    id: 2,
+    text: 'Wrok effectively both in a team enviroment and alone',
+    svg: <AiOutlineCheckSquare />,
+  },
+];
+
+export const skillGrids = [
+  {
+    id: 1,
+    text: 'HTML5',
+    svg: <SiHtml5 />,
+  },
+  {
+    id: 1,
+    text: 'CSS3',
+    svg: <DiCss3 />,
+  },
+  {
+    id: 1,
+    text: 'Javascript',
+    svg: <SiJavascript />,
+  },
+  {
+    id: 1,
+    text: 'React',
+    svg: <GrReactjs />,
+  },
+  {
+    id: 1,
+    text: 'BootStrap4',
+    svg: <SiBootstrap />,
+  },
+  {
+    id: 1,
+    text: 'GIT',
+    svg: <SiGithub />,
+  },
+
+  {
+    id: 1,
+    text: 'REST API',
+    svg: <AiFillApi />,
+  },
+  {
+    id: 1,
+    text: 'Styled C',
+    svg: <SiStyledComponents />,
+  },
+  {
+    id: 1,
+    text: 'R Router',
+    svg: <SiReactrouter />,
+  },
+
+  {
+    id: 1,
+    text: 'M365',
+    svg: <SiMicrosoft />,
   },
 ];

@@ -53,7 +53,13 @@ export default function App() {
             {/* 1st Project */}
             <div className="project__item">
               <div className="project__img">
-                <img src={gInterior} alt="gInterior" />
+                <a
+                  href="https://ginterior.netlify.app/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <img src={gInterior} alt="gInterior" />
+                </a>
               </div>
               <div className="project__info">
                 <h2>G - Interior Website</h2>
@@ -122,7 +128,13 @@ export default function App() {
             {/* 2nd Project */}
             <div className="project__item">
               <div className="project__img">
-                <img src={corpVision} alt="gInterior" />
+                <a
+                  href="https://corp-vision.netlify.app/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <img src={corpVision} alt="gInterior" />
+                </a>
               </div>
               <div className="project__info">
                 <h2>Corp Vision Website</h2>
@@ -187,7 +199,13 @@ export default function App() {
             {/* 3rd Project */}
             <div className="project__item">
               <div className="project__img">
-                <img src={gitHubUser} alt="gInterior" />
+                <a
+                  href="https://search-githubser.netlify.app/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <img src={gitHubUser} alt="gInterior" />
+                </a>
               </div>
               <div className="project__info">
                 <h2>Github User Search Page</h2>

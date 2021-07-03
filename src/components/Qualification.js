@@ -15,6 +15,7 @@ function AboutPage() {
         <p className="qualification__date">{item.date}</p>
         <h2 className="qualification__title">{item.title}</h2>
         <p className="qualification__subTitle">{item.subTitlt}</p>
+        {item.sub && <p className="qualification__subTitle">{item.sub}</p>}
       </div>
     </div>
   ));
