@@ -144,3 +144,32 @@ export const contacts = [
     image: <BiMap />,
   },
 ];
+
+export const educationalList = [
+  {
+    id: 1,
+    date: '2017-2021',
+    title: 'Ho Chi Minh City University of Technology',
+    subTitlt: 'Civil Engineering',
+  },
+  {
+    id: 1,
+    date: '1999-forever',
+    title: 'Autodidact (Self-Learner)',
+    subTitlt: 'Udemy / Google / Internet',
+  },
+];
+export const worksList = [
+  {
+    id: 1,
+    date: '2021-present',
+    title: 'You are person who decide it...',
+    subTitlt: 'Front End Developer',
+  },
+  {
+    id: 1,
+    date: '2021-present',
+    title: 'You will fill it...',
+    subTitlt: 'Web Developer',
+  },
+];
