@@ -59,7 +59,7 @@ const Wrapper = styled.div`
     height: 200px;
     position: absolute;
     left: 50%;
-    top: 26%;
+    top: 27%;
     transform: translate(-50%, 50%);
   }
 

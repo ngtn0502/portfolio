@@ -7,6 +7,8 @@ import ContactPage from './pages/ContactPage.js';
 import NavBar from './components/NavBar';
 import SmoothScrolling from './components/SmoothScrolling';
 import Footer from './components/Footer.js';
+import FadeInWhenVisible from './utils/InviewHelper.js';
+import { footerVariants } from './utils/constant.js';
 
 function App() {
   return (
@@ -31,7 +33,9 @@ function App() {
               <HomePage />
             </Route>
           </Switch>
-          <Footer />
+          <FadeInWhenVisible variants={footerVariants}>
+            <Footer />
+          </FadeInWhenVisible>
         </SmoothScrolling>
       </Router>
     </>

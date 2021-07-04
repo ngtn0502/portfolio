@@ -2,7 +2,17 @@ import React from 'react';
 import styled from 'styled-components';
 import { FaBars, FaGlobe } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
 import { links, socials } from '../utils/constant';
+
+const btnVariants = {
+  hover: {
+    scale: 1.5,
+    transition: {
+      duration: 0.3,
+    },
+  },
+};
 
 function Footer() {
   return (
@@ -17,9 +27,13 @@ function Footer() {
           <h2>Links</h2>
           <ul>
             {links.map((link) => (
-              <li key={link.id}>
+              <motion.li
+                key={link.id}
+                variants={btnVariants}
+                whileHover="hover"
+              >
                 <Link to={link.url}>{link.text}</Link>
-              </li>
+              </motion.li>
             ))}
           </ul>
         </div>
@@ -32,11 +46,15 @@ function Footer() {
           <h2>Socials</h2>
           <ul>
             {socials.map((link) => (
-              <li key={link.id}>
+              <motion.li
+                key={link.id}
+                variants={btnVariants}
+                whileHover="hover"
+              >
                 <a href={link.url} target="_blank" rel="noreferrer">
                   {link.image}
                 </a>
-              </li>
+              </motion.li>
             ))}
           </ul>
         </div>

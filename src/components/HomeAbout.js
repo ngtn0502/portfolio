@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import homeAbout from '../assets/images/homeAbout.jpg';
@@ -17,7 +17,7 @@ function HomeAbout() {
             or my Github.
           </p>
           <div className="homeAbout__btn">
-            <Link to="/project" className="btn">
+            <Link to="/about" className="btn">
               More...
             </Link>
             <Link to="/project" className="btn btn2">
@@ -45,7 +45,7 @@ export default HomeAbout;
 
 const Wrapper = styled.main`
   .homeAbout {
-    margin-top: 15rem;
+    margin-top: 30rem;
     span,
     p {
       font-size: 1.5rem;

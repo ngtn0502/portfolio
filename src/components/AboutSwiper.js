@@ -5,12 +5,12 @@ import SwiperCore, { EffectCoverflow, Pagination } from 'swiper/core';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 // Import image
-import JS from '../assets/images/About/JS.svg';
-import HTML5 from '../assets/images/About/HTML5.svg';
-import CSS3 from '../assets/images/About/CSS3.svg';
-import ReactJS from '../assets/images/About/ReactJS.svg';
-import bootstrap from '../assets/images/About/bootstrap.svg';
-import redux from '../assets/images/About/redux.svg';
+import JS from '../assets/images/Logo/JS.svg';
+import HTML5 from '../assets/images/Logo/HTML5.svg';
+import CSS3 from '../assets/images/Logo/CSS3.svg';
+import ReactJS from '../assets/images/Logo/ReactJS.svg';
+import bootstrap from '../assets/images/Logo/bootstrap.svg';
+import redux from '../assets/images/Logo/redux.svg';
 
 //
 import 'swiper/swiper.min.css';

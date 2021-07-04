@@ -27,7 +27,7 @@ Variables
     font-size: 10px;
     font-family: 'Roboto Mono';
     background-color: var(--dark-bg);  
-    scroll-behavior: smooth;
+    scroll-behavior: smooth;  
   }
   ul,li{
     list-style: none;

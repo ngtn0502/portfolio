@@ -7,23 +7,24 @@ import {
 } from 'react-icons/fa';
 import { BsPhone } from 'react-icons/bs';
 import { IoMailOutline } from 'react-icons/io5';
-import { AiOutlineCheckSquare, AiFillApi } from 'react-icons/ai';
+import { AiOutlineCheckSquare } from 'react-icons/ai';
 
 import { BiMap } from 'react-icons/bi';
 
-import { GrReactjs } from 'react-icons/gr';
-import { DiCss3, DiSass } from 'react-icons/di';
-import {
-  SiReactrouter,
-  SiHtml5,
-  SiStyledComponents,
-  SiJavascript,
-  SiBootstrap,
-  SiJquery,
-  SiGithub,
-  SiMicrosoft,
-} from 'react-icons/si';
 import gInterior from '../assets/images/gInterior.PNG';
+// IMG
+import JS from '../assets/images/Logo/JS.svg';
+import HTML5 from '../assets/images/Logo/HTML5.svg';
+import CSS3 from '../assets/images/Logo/CSS3.svg';
+import ReactJS from '../assets/images/Logo/ReactJS.svg';
+import bootstrap from '../assets/images/Logo/bootstrap.svg';
+import github from '../assets/images/Logo/github.svg';
+import m365 from '../assets/images/Logo/m365.svg';
+import redux from '../assets/images/Logo/redux.svg';
+import Router from '../assets/images/Logo/Router.svg';
+import sass from '../assets/images/Logo/sass.svg';
+import rest from '../assets/images/Logo/rest.png';
+import styled from '../assets/images/Logo/styled.png';
 
 export const projects = [
   {
@@ -221,58 +222,67 @@ export const skillGrids = [
   {
     id: 1,
     text: 'HTML5',
-    svg: <SiHtml5 />,
+    svg: <img src={HTML5} alt="" />,
   },
   {
     id: 1,
     text: 'CSS3',
-    svg: <DiCss3 />,
+    svg: <img src={CSS3} alt="" />,
   },
   {
     id: 1,
     text: 'Javascript',
-    svg: <SiJavascript />,
+    svg: <img src={JS} alt="" />,
   },
   {
     id: 1,
     text: 'React',
-    svg: <GrReactjs />,
+    svg: <img src={ReactJS} alt="" />,
   },
   {
     id: 1,
     text: 'BootStrap4',
-    svg: <SiBootstrap />,
+    svg: <img src={bootstrap} alt="" />,
   },
   {
     id: 1,
     text: 'GitHub',
-    svg: <SiGithub />,
+    svg: <img src={github} alt="" />,
   },
 
   {
     id: 1,
     text: 'REST API',
-    svg: <AiFillApi />,
+    svg: <img src={rest} alt="" />,
   },
   {
     id: 1,
-    text: 'Styled C',
-    svg: <SiStyledComponents />,
+    text: 'React Router',
+    svg: <img src={Router} alt="" />,
   },
   {
     id: 1,
-    text: 'R Router',
-    svg: <SiReactrouter />,
+    text: 'Redux',
+    svg: <img src={redux} alt="" />,
   },
-
+  {
+    id: 1,
+    text: 'Styled Component',
+    svg: <img src={styled} alt="" />,
+  },
   {
     id: 1,
     text: 'M365',
-    svg: <SiMicrosoft />,
+    svg: <img src={m365} alt="" />,
   },
   {
     id: 1,
     text: 'SASS',
-    svg: <DiSass />,
+    svg: <img src={sass} alt="" />,
   },
 ];
+
+export const footerVariants = {
+  visible: { opacity: 1 },
+  hidden: { opacity: 0 },
+};

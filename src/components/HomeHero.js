@@ -55,7 +55,7 @@ export default function HomeHero() {
 
 const Wrapper = styled.main`
   position: relative;
-  padding: 10rem 0;
+  padding: 8rem 0;
   .hero__title {
     text-align: center;
     position: relative;
@@ -82,6 +82,7 @@ const Wrapper = styled.main`
   .hero__infor {
     margin: 0px auto;
   }
+  /* For Indicator Scroll */
   .hero__scrollDown,
   .hero__social {
     text-transform: uppercase;
@@ -92,11 +93,11 @@ const Wrapper = styled.main`
   }
   .hero__social {
     left: -4rem;
-    bottom: 0rem;
+    bottom: -4rem;
   }
   .hero__scrollDown {
     right: -4rem;
-    bottom: -10rem;
+    bottom: -15rem;
     img {
       max-height: 8rem;
     }
@@ -134,6 +135,7 @@ const Wrapper = styled.main`
       gap: 2rem;
     }
   }
+  /* End Indicator Scroll */
   .btn {
     padding: 0.5em 1.5em;
     font-size: 1.5rem;
@@ -159,11 +161,11 @@ const Wrapper = styled.main`
     }
     .hero__social {
       left: 0rem;
-      bottom: -10rem;
+      bottom: 0rem;
     }
     .hero__scrollDown {
       right: 0rem;
-      bottom: -25rem;
+      bottom: -20rem;
     }
   }
 `;

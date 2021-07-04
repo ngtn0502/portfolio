@@ -1,12 +1,17 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
+import { motion } from 'framer-motion';
 import { links } from '../utils/constant';
 
 export default function NavBar() {
   const [isSideBar, setIsSideBar] = useState(false);
   const [navLink, setNavLink] = useState(null);
+  const current = useLocation();
+  useEffect(() => {
+    setNavLink(current.pathname);
+  }, [current]);
 
   const openSideBarHandler = () => {
     setIsSideBar((prev) => !prev);
@@ -30,14 +35,14 @@ export default function NavBar() {
             <li
               key={link.id}
               className={`${
-                navLink === link.id ? 'nav__link active' : 'nav__link'
+                navLink === link.url ? 'nav__link active' : 'nav__link'
               }`}
             >
               <Link
                 to={link.url}
                 onClick={() => {
                   setIsSideBar(false);
-                  return setNavLink(link.id);
+                  return setNavLink(link.url);
                 }}
               >
                 {link.text}
@@ -101,9 +106,8 @@ const NavContainer = styled.nav`
       max-width: 300px;
       letter-spacing: var(--spacing);
       transition: var(--transition);
-      &:hover {
-        background-color: var(--deep-dark);
-        border-radius: var(--radius);
+      &:hover a {
+        color: var(--white);
       }
       a {
         transition: var(--transition);
@@ -121,6 +125,9 @@ const NavContainer = styled.nav`
       align-items: center;
     }
     .active {
+      background-color: var(--deep-dark);
+      border-radius: var(--radius);
+
       a {
         color: var(--white);
       }

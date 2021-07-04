@@ -1,37 +1,98 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import { FaGraduationCap, FaBusinessTime } from 'react-icons/fa';
+import { motion } from 'framer-motion';
 import { educationalList, worksList } from '../utils/constant';
+
+const parentVariants = {
+  hidden: {
+    opacity: 0,
+    x: 200,
+  },
+  visible: {
+    opacity: 1,
+    x: 0,
+    transition: {
+      duration: 0.4,
+      when: 'beforeChildren',
+      staggerChildren: 0.1,
+    },
+  },
+};
+
+const childrenVariants = {
+  hidden: {
+    opacity: 0,
+    x: 200,
+  },
+  visible: {
+    opacity: 1,
+    x: 0,
+    transition: {
+      duration: 0.4,
+    },
+  },
+};
 
 function AboutPage() {
   const [btnActive, setBtnActive] = useState(true);
-  let content = educationalList.map((item) => (
+  const content = educationalList.map((item) => (
     <div className="qualification__data">
-      <div>
+      <motion.div variants={parentVariants} initial="hidden" animate="visible">
         <div className="qualification__rounder" />
         <div className="qualification__line" />
-      </div>
-      <div className="data2">
-        <p className="qualification__date">{item.date}</p>
-        <h2 className="qualification__title">{item.title}</h2>
-        <p className="qualification__subTitle">{item.subTitlt}</p>
-        {item.sub && <p className="qualification__subTitle">{item.sub}</p>}
-      </div>
+      </motion.div>
+      <motion.div
+        className="data2"
+        variants={parentVariants}
+        initial="hidden"
+        animate="visible"
+      >
+        <motion.p className="qualification__date" variants={childrenVariants}>
+          {item.date}
+        </motion.p>
+        <motion.h2 className="qualification__title" variants={childrenVariants}>
+          {item.title}
+        </motion.h2>
+        <motion.div variants={childrenVariants}>
+          <p className="qualification__subTitle">{item.subTitlt}</p>
+          {item.sub && <p className="qualification__subTitle">{item.sub}</p>}
+        </motion.div>
+      </motion.div>
     </div>
   ));
-
+  let content2;
   if (!btnActive) {
-    content = worksList.map((item) => (
+    content2 = worksList.map((item) => (
       <div className="qualification__data">
-        <div>
+        <motion.div
+          variants={parentVariants}
+          initial="hidden"
+          animate="visible"
+        >
           <div className="qualification__rounder" />
           <div className="qualification__line" />
-        </div>
-        <div className="data2">
-          <p className="qualification__date">{item.date}</p>
-          <h2 className="qualification__title">{item.title}</h2>
-          <p className="qualification__subTitle">{item.subTitlt}</p>
-        </div>
+        </motion.div>
+        <motion.div
+          className="data2"
+          variants={parentVariants}
+          initial="hidden"
+          animate="visible"
+        >
+          <motion.p className="qualification__date" variants={childrenVariants}>
+            {item.date}
+          </motion.p>
+          <motion.h2
+            className="qualification__title"
+            variants={childrenVariants}
+          >
+            {item.title}
+          </motion.h2>
+          <motion.div variants={childrenVariants}>
+            <p className="qualification__subTitle">{item.subTitlt}</p>
+            {item.sub && <p className="qualification__subTitle">{item.sub}</p>}
+          </motion.div>
+        </motion.div>
       </div>
     ));
   }
@@ -76,7 +137,8 @@ function AboutPage() {
             </button>
           </div>
         </div>
-        {content}
+        {btnActive && content}
+        {!btnActive && content2}
       </div>
     </Wrapper>
   );
