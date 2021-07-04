@@ -25,6 +25,9 @@ import Router from '../assets/images/Logo/Router.svg';
 import sass from '../assets/images/Logo/sass.svg';
 import rest from '../assets/images/Logo/rest.png';
 import styled from '../assets/images/Logo/styled.png';
+import corpCap from '../assets/images/HomeProject/corpCap.PNG';
+import githubCap from '../assets/images/HomeProject/githubCap.PNG';
+import interiorCap from '../assets/images/HomeProject/interiorCap.PNG';
 
 export const projects = [
   {
@@ -101,6 +104,7 @@ export const links = [
   },
 ];
 
+// Footer
 export const media = [
   {
     id: 1,
@@ -159,6 +163,7 @@ export const contacts = [
   },
 ];
 
+// In About
 export const educationalList = [
   {
     id: 1,
@@ -218,6 +223,7 @@ export const advantages = [
   },
 ];
 
+// For SkillGrid in About
 export const skillGrids = [
   {
     id: 1,
@@ -282,7 +288,27 @@ export const skillGrids = [
   },
 ];
 
+// For scrolling animation
 export const footerVariants = {
   visible: { opacity: 1 },
   hidden: { opacity: 0 },
 };
+
+// For HomeProject
+export const homeProjectList = [
+  {
+    id: 1,
+    text: 'Corp Landing Page',
+    img: corpCap,
+  },
+  {
+    id: 1,
+    text: 'E-Commerce Interior Page',
+    img: interiorCap,
+  },
+  {
+    id: 1,
+    text: 'Github Search Page',
+    img: githubCap,
+  },
+];

@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { motion } from 'framer-motion';
 import HomeHero from '../components/HomeHero.js';
 import HomeAbout from '../components/HomeAbout';

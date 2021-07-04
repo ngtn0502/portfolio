@@ -69,7 +69,7 @@ function Footer() {
 
 const Wrapper = styled.footer`
   background-color: var(--deep-dark);
-  margin-top: 15rem;
+  margin-top: 10rem;
   /* width: 10rem; */
   .footer__link {
     padding: 1rem 0;
@@ -124,6 +124,7 @@ const Wrapper = styled.footer`
     padding-bottom: 1rem;
   }
   @media (min-width: 920px) {
+    margin-top: 15rem;
     .container {
       display: grid;
       grid-template-columns: 1fr 1fr;

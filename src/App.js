@@ -5,7 +5,7 @@ import AboutPage from './pages/AboutPage.js';
 import ProjectPage from './pages/ProjectPage.js';
 import ContactPage from './pages/ContactPage.js';
 import NavBar from './components/NavBar';
-import SmoothScrolling from './components/SmoothScrolling';
+import SmoothScrolling from './utils/SmoothScrolling';
 import Footer from './components/Footer.js';
 import FadeInWhenVisible from './utils/InviewHelper.js';
 import { footerVariants } from './utils/constant.js';

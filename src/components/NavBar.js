@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import styled from 'styled-components';
 import { Link, useLocation } from 'react-router-dom';
-import { motion } from 'framer-motion';
 import { links } from '../utils/constant';
 
 export default function NavBar() {
@@ -72,7 +71,7 @@ const NavContainer = styled.nav`
   background-color: var(--dark-bg);
 
   .containerNav {
-    width: 100%;
+    width: 90%;
     max-width: 1200px;
     margin: 0 auto;
   }

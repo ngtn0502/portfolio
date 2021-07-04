@@ -1,5 +1,5 @@
-import React, { useRef, useState } from 'react';
-import SwiperCore, { EffectCube, Pagination, Autoplay } from 'swiper/core';
+import React from 'react';
+import SwiperCore, { EffectCube, Autoplay } from 'swiper/core';
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -59,7 +59,7 @@ const Wrapper = styled.div`
     height: 200px;
     position: absolute;
     left: 50%;
-    top: 27%;
+    top: 20%;
     transform: translate(-50%, 50%);
   }
 
@@ -77,7 +77,7 @@ const Wrapper = styled.div`
   }
   @media (min-width: 920px) {
     .swiper-container {
-      top: 40%;
+      top: 28.5%;
     }
   }
 `;
