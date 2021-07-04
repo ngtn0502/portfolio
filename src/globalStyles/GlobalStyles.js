@@ -146,7 +146,8 @@ p{
   }
  
  .category{
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
+    font-family: "Montserrat Bold";
     text-align: center;
     margin-top: 2rem;
     font-size: 2.5rem;

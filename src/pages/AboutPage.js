@@ -18,23 +18,23 @@ function AboutPage() {
       <div className="about">
         <div className="about__firstSection">
           <div>
-            <h1 className="category">Introduce</h1>
+            {/* <h1 className="category">Introduce</h1> */}
             <Introduce />
           </div>
           <div>
-            <h1 className="category">qualification</h1>
+            <h1 className="category">Qualification</h1>
             <Qualification />
           </div>
         </div>
         <div className="about__secondSection">
           <div>
-            <h1 className="category">Technique Skills</h1>
+            <h1 className="category">Technique skills</h1>
             <TechniqueSkills />
           </div>
-          <div>
-            <h1 className="category">Personal Skills</h1>
+          {/* <div>
+            <h1 className="category">Personal skills</h1>
             <PersonalSkills />
-          </div>
+          </div> */}
         </div>
         {/* <div className="about__skill">
           <h1 className="category">my skills</h1>
@@ -54,6 +54,9 @@ function AboutPage() {
 const Wrapper = styled.div`
   padding-top: 10rem;
   position: relative;
+  .about {
+    padding-top: 5rem;
+  }
   .title {
     span {
       display: inline;
@@ -88,7 +91,7 @@ const Wrapper = styled.div`
     }
   }
   @media (min-width: 920px) {
-    .about__secondSection,
+    /* .about__secondSection, */
     .about__firstSection {
       display: grid;
       grid-template-columns: 1fr 1fr;

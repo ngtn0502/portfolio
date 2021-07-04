@@ -12,7 +12,7 @@ import { AiOutlineCheckSquare, AiFillApi } from 'react-icons/ai';
 import { BiMap } from 'react-icons/bi';
 
 import { GrReactjs } from 'react-icons/gr';
-import { DiCss3 } from 'react-icons/di';
+import { DiCss3, DiSass } from 'react-icons/di';
 import {
   SiReactrouter,
   SiHtml5,
@@ -245,7 +245,7 @@ export const skillGrids = [
   },
   {
     id: 1,
-    text: 'GIT',
+    text: 'GitHub',
     svg: <SiGithub />,
   },
 
@@ -269,5 +269,10 @@ export const skillGrids = [
     id: 1,
     text: 'M365',
     svg: <SiMicrosoft />,
+  },
+  {
+    id: 1,
+    text: 'SASS',
+    svg: <DiSass />,
   },
 ];
