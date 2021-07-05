@@ -39,8 +39,8 @@ const Wrapper = styled.div`
     }
   }
   h2 {
-    font-size: 2rem;
-    letter-spacing: 0.3rem;
+    font-size: 2.5rem;
+    letter-spacing: 0.2rem;
     padding: 1rem 0;
   }
   hr {

@@ -11,7 +11,7 @@ const btnVariants = {
   },
 };
 
-function TechniqueSkills({ skillGrids }) {
+function TechniqueSkills({ skillGrids, styleP, styleGrid }) {
   return (
     <Wrapper>
       <ul className="skillGrids">
@@ -21,9 +21,10 @@ function TechniqueSkills({ skillGrids }) {
             className="skillGrids__item"
             variants={btnVariants}
             whileHover="hover"
+            style={styleGrid || null}
           >
             {item.svg}
-            <p>{item.text}</p>
+            <p style={styleP || null}>{item.text}</p>
           </motion.div>
         ))}
       </ul>
@@ -71,8 +72,8 @@ const Wrapper = styled.div`
       grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
       .skillGrids__item {
         img {
-          width: 4rem;
-          height: 4rem;
+          width: 3rem;
+          height: 3rem;
           object-fit: contain;
         }
         p {

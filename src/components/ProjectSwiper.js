@@ -24,6 +24,7 @@ import { HiViewGrid } from 'react-icons/hi';
 import gInterior from '../assets/images/gInterior.PNG';
 import corpVision from '../assets/images/corpVision.PNG';
 import gitHubUser from '../assets/images/gitHubUser.PNG';
+import myPortfolio from '../assets/images/myPortfolio.PNG';
 // Import Swiper styles
 import 'swiper/swiper.min.css';
 import 'swiper/components/pagination/pagination.min.css';
@@ -34,12 +35,22 @@ import {
   projectSkillGrids,
   projectSkillGrids2,
   projectSkillGrids3,
+  projectSkillGrids4,
+  projectSkillGrids5,
 } from '../utils/constant.js';
 
 // import Swiper core and required modules
 
 // install Swiper modules
 SwiperCore.use([Navigation]);
+
+const styleP = {
+  lineHeight: '2rem',
+};
+
+const styleGrid = {
+  padding: '1rem 0 0 0',
+};
 
 export default function App() {
   return (
@@ -54,6 +65,80 @@ export default function App() {
         navigation
         className="mySwiper"
       >
+        <SwiperSlide>
+          <div>
+            {/* 1st Project */}
+            <div className="project__item">
+              <div className="project__img">
+                <a
+                  href="http://nhannguyen.netlify.app/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <img src={myPortfolio} alt="gInterior" />
+                </a>
+              </div>
+              <div className="project__info">
+                <h2>My Portfolio</h2>
+              </div>
+              <div>
+                <a
+                  href="http://nhannguyen.netlify.app/"
+                  target="_blank"
+                  className="btn"
+                  rel="noreferrer"
+                >
+                  View Project
+                </a>
+                <a
+                  href="https://github.com/ngtn0502/portfolio"
+                  target="_blank"
+                  className="btn2"
+                  rel="noreferrer"
+                >
+                  GitHub
+                </a>
+              </div>
+            </div>
+            {/* Brief */}
+            <div className="project__brief">
+              <h2>
+                <span>
+                  <HiViewGrid />
+                </span>
+                Overview
+              </h2>
+              <p>A personal portfolio website</p>
+              <p />
+              <h2>
+                <span>
+                  <BiCodeAlt />
+                </span>
+                Technology Used
+              </h2>
+              {/* Skill */}
+              <TechniqueSkills
+                styleP={styleP}
+                styleGrid={styleGrid}
+                skillGrids={projectSkillGrids4}
+              />
+              {/* Skill */}
+              <h2>
+                <span>
+                  <BiCodeAlt />
+                </span>
+                UI Library Used
+              </h2>
+              {/* Skill */}
+              <TechniqueSkills
+                styleP={styleP}
+                styleGrid={styleGrid}
+                skillGrids={projectSkillGrids5}
+              />
+              {/* Skill */}
+            </div>
+          </div>
+        </SwiperSlide>
         <SwiperSlide>
           <div>
             {/* 1st Project */}
@@ -79,6 +164,14 @@ export default function App() {
                 >
                   View Project
                 </a>
+                <a
+                  href="https://github.com/ngtn0502/furni-store-project"
+                  target="_blank"
+                  className="btn2"
+                  rel="noreferrer"
+                >
+                  GitHub
+                </a>
               </div>
             </div>
             {/* Brief */}
@@ -101,7 +194,11 @@ export default function App() {
                 Technology Used
               </h2>
               {/* Skill */}
-              <TechniqueSkills skillGrids={projectSkillGrids} />
+              <TechniqueSkills
+                styleP={styleP}
+                styleGrid={styleGrid}
+                skillGrids={projectSkillGrids}
+              />
               {/* Skill */}
             </div>
           </div>
@@ -131,6 +228,14 @@ export default function App() {
                 >
                   View Project
                 </a>
+                <a
+                  href="https://github.com/ngtn0502/Corpvision-Bootstrap"
+                  target="_blank"
+                  className="btn2"
+                  rel="noreferrer"
+                >
+                  GitHub
+                </a>
               </div>
             </div>
             {/* Brief */}
@@ -153,7 +258,11 @@ export default function App() {
                 Technology Used
               </h2>
               {/* Skill */}
-              <TechniqueSkills skillGrids={projectSkillGrids2} />
+              <TechniqueSkills
+                styleP={styleP}
+                styleGrid={styleGrid}
+                skillGrids={projectSkillGrids2}
+              />
               {/* Skill */}
             </div>
           </div>
@@ -183,6 +292,14 @@ export default function App() {
                 >
                   View Project
                 </a>
+                <a
+                  href="https://github.com/ngtn0502/ReactJS---githubUser"
+                  target="_blank"
+                  className="btn2"
+                  rel="noreferrer"
+                >
+                  GitHub
+                </a>
               </div>
             </div>
             <div className="project__brief">
@@ -203,7 +320,11 @@ export default function App() {
                 Technology Used
               </h2>
               {/* Skill */}
-              <TechniqueSkills skillGrids={projectSkillGrids3} />
+              <TechniqueSkills
+                styleP={styleP}
+                styleGrid={styleGrid}
+                skillGrids={projectSkillGrids3}
+              />
               {/* Skill */}
             </div>
           </div>
@@ -223,8 +344,8 @@ const Wrapper = styled.div`
     span {
       display: inline-block;
       margin-right: 1rem;
-      width: 2rem;
-      height: 2rem;
+      width: 3rem;
+      height: 3rem;
       color: var(--gray-1);
     }
   }
@@ -313,14 +434,24 @@ const Wrapper = styled.div`
     }
     .project__info {
       h2 {
-        font-size: 3rem;
+        font-size: 3.5rem;
         color: var(--white);
         font-family: 'Montserrat Bold';
       }
     }
     .btn {
-      padding: 0.7em 2em;
-      font-size: 2rem;
+      padding: 0.7em 1em;
+      font-size: 1.8rem;
+      margin-right: 3rem;
+    }
+    .btn2 {
+      display: inline-block;
+      padding: 0.7em 1.5em;
+      font-size: 1.8rem;
+      &:hover {
+        background-color: rgb(188, 180, 180, 1);
+        color: var(--deep-dark);
+      }
     }
     .techStack__title {
       margin-top: 2rem;

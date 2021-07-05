@@ -112,7 +112,7 @@ const Wrapper = styled.div`
     .about__firstSection {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 2rem;
+      gap: 4rem;
       .category {
         margin-top: 0;
         padding-top: 0;
