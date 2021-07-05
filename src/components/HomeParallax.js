@@ -48,12 +48,17 @@ export default function App() {
             An Interior E-commerce Site
           </div>
           <div className="text" data-swiper-parallax="-100">
-            <Link to="/project" className="btn">
+            <Link to="/project" className="btn2">
               Details
             </Link>
-            <button type="button" className="btn">
+            <a
+              href="https://ginterior.netlify.app/"
+              target="_blank"
+              className="btn2"
+              rel="noreferrer"
+            >
               Go to site
-            </button>
+            </a>
             <img src={interiorCap} alt="" />
           </div>
         </SwiperSlide>
@@ -65,12 +70,17 @@ export default function App() {
             A landing page
           </div>
           <div className="text" data-swiper-parallax="-100">
-            <Link to="/project" className="btn">
+            <Link to="/project" className="btn2">
               Details
             </Link>
-            <button type="button" className="btn">
+            <a
+              href="https://corp-vision.netlify.app/"
+              target="_blank"
+              className="btn2"
+              rel="noreferrer"
+            >
               Go to site
-            </button>
+            </a>
             <img src={corpCap} alt="" />
           </div>
         </SwiperSlide>
@@ -82,12 +92,17 @@ export default function App() {
             A page
           </div>
           <div className="text" data-swiper-parallax="-100">
-            <Link to="/project" className="btn">
+            <Link to="/project" className="btn2">
               Details
             </Link>
-            <button type="button" className="btn">
+            <a
+              href="https://search-githubser.netlify.app/"
+              target="_blank"
+              className="btn2"
+              rel="noreferrer"
+            >
               Go to site
-            </button>
+            </a>
             <img src={githubCap} alt="" />
           </div>
         </SwiperSlide>
@@ -139,10 +154,14 @@ const Wrapper = styled.div`
     font-size: 14px;
     max-width: 500px;
     line-height: 1.3;
-    .btn {
+    .btn2 {
       padding: 0.3rem 1rem;
       margin: 1rem 1rem 0 0;
       font-size: 1.5rem;
+      &:hover {
+        background-color: rgb(188, 180, 180, 1);
+        color: var(--deep-dark);
+      }
     }
     img {
       margin-top: 1.5rem;
@@ -166,9 +185,9 @@ const Wrapper = styled.div`
     .swiper-slide .text {
       max-width: 300px;
       line-height: 1.3;
-      .btn {
+      .btn2 {
         font-size: 1.8rem;
-        padding: 1rem 2rem;
+        padding: 0.3em 1em;
         margin: 1rem 1rem 0 0;
       }
       img {

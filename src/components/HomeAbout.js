@@ -113,6 +113,22 @@ const Wrapper = styled.main`
         height: 250px;
       }
     }
+    /* .homeAbout {
+      span,
+      p {
+        font-size: 1.7rem;
+        line-height: 2em;
+      }
+      h1 {
+        font-size: 5rem;
+      }
+    } */
+    .homeAbout__btn {
+      .btn {
+        font-size: 1.8rem !important;
+        padding: 0.3em 1em !important;
+      }
+    }
   }
 
   @media (min-width: 920px) {
