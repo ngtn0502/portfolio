@@ -5,7 +5,16 @@ import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { links, socials } from '../utils/constant';
 
-const btnVariants = {
+const socialsVariants = {
+  hover: {
+    scale: 1.5,
+    transition: {
+      duration: 0.3,
+    },
+  },
+};
+
+const linksVariants = {
   hover: {
     scale: 1.5,
     transition: {
@@ -29,7 +38,7 @@ function Footer() {
             {links.map((link) => (
               <motion.li
                 key={link.id}
-                variants={btnVariants}
+                variants={socialsVariants}
                 whileHover="hover"
               >
                 <Link to={link.url}>{link.text}</Link>
@@ -48,7 +57,7 @@ function Footer() {
             {socials.map((link) => (
               <motion.li
                 key={link.id}
-                variants={btnVariants}
+                variants={linksVariants}
                 whileHover="hover"
               >
                 <a href={link.url} target="_blank" rel="noreferrer">
@@ -104,16 +113,16 @@ const Wrapper = styled.footer`
       margin-top: 2rem;
       justify-content: space-between;
       gap: 0.5rem;
-      max-width: 30rem;
+      max-width: 33rem;
       a {
         text-transform: uppercase;
-        font-size: 1.5rem;
+        font-size: 1.8rem;
         color: var(--white);
         font-weight: 400;
       }
       svg {
-        width: 2rem;
-        height: 2rem;
+        width: 2.5rem;
+        height: 2.8rem;
         fill: var(--white);
         font-weight: 400;
       }

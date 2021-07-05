@@ -42,7 +42,7 @@ function ContactForm() {
               </label>
             </div>
             <button type="submit" className="btn">
-              SEND
+              hire me
             </button>
           </form>
         </div>

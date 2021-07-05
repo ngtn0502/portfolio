@@ -109,7 +109,7 @@ const Wrapper = styled.div`
 
   .swiper-slide {
     font-size: 18px;
-    color: #fff;
+    color: #1e1e1e;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     padding: 40px 60px;
@@ -128,7 +128,7 @@ const Wrapper = styled.div`
 
   .swiper-slide .title {
     font-size: 30px;
-    font-weight: 300;
+    font-weight: 700;
   }
 
   .swiper-slide .subtitle {
@@ -145,10 +145,12 @@ const Wrapper = styled.div`
       font-size: 1.5rem;
     }
     img {
-      max-width: 400px;
-      height: 200px;
+      margin-top: 1.5rem;
+      width: 100%;
+      height: 100%;
       border-radius: var(--radius);
       object-fit: contain;
+      border: 4px solid var(--gray-1);
     }
   }
   @media (min-width: 920px) {
@@ -162,16 +164,17 @@ const Wrapper = styled.div`
     }
 
     .swiper-slide .text {
-      font-size: 14px;
-      max-width: 500px;
+      max-width: 300px;
       line-height: 1.3;
       .btn {
-        padding: 0.5rem 1.5rem;
+        font-size: 1.8rem;
+        padding: 1rem 2rem;
         margin: 1rem 1rem 0 0;
       }
       img {
-        max-width: 400px;
-        height: 300px;
+        margin-top: 1.5rem;
+        width: 100%;
+        height: 100%;
         border-radius: var(--radius);
         object-fit: contain;
       }

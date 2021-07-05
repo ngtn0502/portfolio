@@ -11,10 +11,10 @@ function HomeAbout() {
           <span>Let me introduce a bit about myself</span>
           <h1>ABOUT ME</h1>
           <p>
-            I currently am studing as a Civil Engineer at HCM university of
-            technology, yet my real passion is design and develop experienced
-            website for the people. See my previous work history on Project page
-            or my Github.
+            I studying as a civil engineering at Ho Chi Minh City University of
+            Technology. However, i based my career as a Developer, since my real
+            passion is coding. <br /> See my previous work history on Project
+            page or my Github.
           </p>
           <div className="homeAbout__btn">
             <Link to="/about" className="btn">

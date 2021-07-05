@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
-import { skillGrids } from '../utils/constant.js';
 
 const btnVariants = {
   hover: {
@@ -12,7 +11,7 @@ const btnVariants = {
   },
 };
 
-function PersonalSkills() {
+function TechniqueSkills({ skillGrids }) {
   return (
     <Wrapper>
       <ul className="skillGrids">
@@ -51,15 +50,15 @@ const Wrapper = styled.div`
       align-items: center;
       justify-content: center;
       text-align: center;
-      padding: 1.5rem;
+      padding: 1rem;
       border-radius: var(--radius);
       transition: var(--transition);
-      box-shadow: 0px 4px 8px rgb(134 151 168 / 30%);
+      /* box-shadow: 0px 4px 8px rgb(134 151 168 / 30%); */
       border: 1px solid #eee;
       cursor: pointer;
       img {
-        width: 4rem;
-        height: 4rem;
+        width: 3rem;
+        height: 3rem;
         object-fit: contain;
       }
       p {
@@ -87,18 +86,10 @@ const Wrapper = styled.div`
       transition: var(--transition);
     }
     .skillGrids__item {
-      box-shadow: 0px 4px 8px rgb(255 255 255 / 30%);
+      /* box-shadow: 0px 4px 8px rgb(255 255 255 / 30%); */
       cursor: pointer;
-      &:hover {
-        /* box-shadow: 0 12px 30px rgb(0 0 0 / 100%);
-        transform: scale(1.1); */
-      }
     }
-    /* .skillGrids:hover ~ .skillGrids__animation {
-      opacity: 1;
-      transform: translateX(0);
-    } */
   }
 `;
 
-export default PersonalSkills;
+export default TechniqueSkills;

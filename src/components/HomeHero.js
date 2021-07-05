@@ -96,7 +96,7 @@ const Wrapper = styled.main`
     bottom: -4rem;
   }
   .hero__scrollDown {
-    right: -4rem;
+    right: -1.5rem;
     bottom: -15rem;
     img {
       max-height: 8rem;

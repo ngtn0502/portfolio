@@ -6,6 +6,7 @@ import Qualification from '../components/Qualification';
 import Introduce from '../components/Introduce.js';
 import TechniqueSkills from '../components/TechniqueSkills';
 import FadeInWhenVisible from '../utils/InviewHelper.js';
+import { skillGrids } from '../utils/constant.js';
 
 function AboutPage() {
   return (
@@ -23,7 +24,6 @@ function AboutPage() {
           <FadeInWhenVisible>
             <div className="about__firstSection">
               <div>
-                {/* <h1 className="category">Introduce</h1> */}
                 <Introduce />
               </div>
               <div>
@@ -37,24 +37,10 @@ function AboutPage() {
               <div>
                 <TypedReactHooksDemo string="let's check out..." />
                 <h1 className="about__secondSection__title">my skills</h1>
-                <TechniqueSkills />
+                <TechniqueSkills skillGrids={skillGrids} />
               </div>
-              {/* <div>
-              <h1 className="category">Personal skills</h1>
-              <PersonalSkills />
-            </div> */}
             </div>
           </FadeInWhenVisible>
-          {/* <div className="about__skill">
-          <h1 className="category">my skills</h1>
-          <div className="hero__social__indicator">
-          <div>
-          <p>right</p>
-          <img src={SocialMediaArrow} alt="" />
-          </div>
-          </div>
-          <AboutSwiper />
-        </div> */}
           <div />
         </div>
       </Wrapper>
@@ -105,9 +91,13 @@ const Wrapper = styled.div`
       padding: 1rem 0;
     }
     span {
-      font-size: 1.3rem;
+      font-size: 1.5rem;
       padding: 0;
     }
+  }
+  .about__secondSection__title {
+    text-align: center;
+    font-size: 2rem;
   }
   @media (min-width: 920px) {
     .about__secondSection {

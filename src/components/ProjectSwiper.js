@@ -8,18 +8,18 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { BiCodeAlt } from 'react-icons/bi';
 import { HiViewGrid } from 'react-icons/hi';
 // For button
-import { GrReactjs } from 'react-icons/gr';
-import { DiCss3 } from 'react-icons/di';
-import {
-  SiReactrouter,
-  SiHtml5,
-  SiStyledComponents,
-  SiJavascript,
-  SiBootstrap,
-  SiJquery,
-  SiGithub,
-} from 'react-icons/si';
-import { AiFillApi } from 'react-icons/ai';
+// import { GrReactjs } from 'react-icons/gr';
+// import { DiCss3 } from 'react-icons/di';
+// import {
+//   SiReactrouter,
+//   SiHtml5,
+//   SiStyledComponents,
+//   SiJavascript,
+//   SiBootstrap,
+//   SiJquery,
+//   SiGithub,
+// } from 'react-icons/si';
+// import { AiFillApi } from 'react-icons/ai';
 
 import gInterior from '../assets/images/gInterior.PNG';
 import corpVision from '../assets/images/corpVision.PNG';
@@ -28,7 +28,13 @@ import gitHubUser from '../assets/images/gitHubUser.PNG';
 import 'swiper/swiper.min.css';
 import 'swiper/components/pagination/pagination.min.css';
 import 'swiper/components/navigation/navigation.min.css';
-// ICON
+// For tech display
+import TechniqueSkills from './TechniqueSkills';
+import {
+  projectSkillGrids,
+  projectSkillGrids2,
+  projectSkillGrids3,
+} from '../utils/constant.js';
 
 // import Swiper core and required modules
 
@@ -94,32 +100,9 @@ export default function App() {
                 </span>
                 Technology Used
               </h2>
-              <div className="techStack">
-                <button type="button" className="btn2">
-                  ReactJS
-                  <GrReactjs />
-                </button>
-                <button type="button" className="btn2">
-                  CSS3
-                  <DiCss3 />
-                </button>
-                <button type="button" className="btn2">
-                  React Router
-                  <SiReactrouter />
-                </button>
-                <button type="button" className="btn2">
-                  HTML5
-                  <SiHtml5 />
-                </button>
-                <button type="button" className="btn2">
-                  Public API
-                  <AiFillApi />
-                </button>
-                <button type="button" className="btn2">
-                  Styled Component
-                  <SiStyledComponents />
-                </button>
-              </div>
+              {/* Skill */}
+              <TechniqueSkills skillGrids={projectSkillGrids} />
+              {/* Skill */}
             </div>
           </div>
         </SwiperSlide>
@@ -169,28 +152,9 @@ export default function App() {
                 </span>
                 Technology Used
               </h2>
-              <div className="techStack">
-                <button type="button" className="btn2">
-                  JavaScript
-                  <SiJavascript />
-                </button>
-                <button type="button" className="btn2">
-                  CSS3
-                  <DiCss3 />
-                </button>
-                <button type="button" className="btn2">
-                  Bootstrap4
-                  <SiBootstrap />
-                </button>
-                <button type="button" className="btn2">
-                  HTML5
-                  <SiHtml5 />
-                </button>
-                <button type="button" className="btn2">
-                  Jquery
-                  <SiJquery />
-                </button>
-              </div>
+              {/* Skill */}
+              <TechniqueSkills skillGrids={projectSkillGrids2} />
+              {/* Skill */}
             </div>
           </div>
         </SwiperSlide>
@@ -238,28 +202,9 @@ export default function App() {
                 </span>
                 Technology Used
               </h2>
-              <div className="techStack">
-                <button type="button" className="btn2">
-                  ReactJS
-                  <GrReactjs />
-                </button>
-                <button type="button" className="btn2">
-                  HTML5
-                  <SiHtml5 />
-                </button>
-                <button type="button" className="btn2">
-                  Github API
-                  <SiGithub />
-                </button>
-                <button type="button" className="btn2">
-                  React Router
-                  <SiReactrouter />
-                </button>
-                <button type="button" className="btn2">
-                  Styled Component
-                  <SiStyledComponents />
-                </button>
-              </div>
+              {/* Skill */}
+              <TechniqueSkills skillGrids={projectSkillGrids3} />
+              {/* Skill */}
             </div>
           </div>
         </SwiperSlide>
@@ -361,6 +306,11 @@ const Wrapper = styled.div`
     }
   }
   @media (min-width: 920px) {
+    .project__brief {
+      h2 {
+        font-size: 2.8em;
+      }
+    }
     .project__info {
       h2 {
         font-size: 3rem;
@@ -370,7 +320,7 @@ const Wrapper = styled.div`
     }
     .btn {
       padding: 0.7em 2em;
-      font-size: 1.5rem;
+      font-size: 2rem;
     }
     .techStack__title {
       margin-top: 2rem;

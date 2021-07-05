@@ -312,3 +312,118 @@ export const homeProjectList = [
     img: githubCap,
   },
 ];
+
+// Skill grids for project
+
+export const projectSkillGrids = [
+  {
+    id: 1,
+    text: 'HTML5',
+    svg: <img src={HTML5} alt="" />,
+  },
+  {
+    id: 1,
+    text: 'CSS3',
+    svg: <img src={CSS3} alt="" />,
+  },
+  {
+    id: 1,
+    text: 'Javascript',
+    svg: <img src={JS} alt="" />,
+  },
+  {
+    id: 1,
+    text: 'React',
+    svg: <img src={ReactJS} alt="" />,
+  },
+
+  {
+    id: 1,
+    text: 'REST API',
+    svg: <img src={rest} alt="" />,
+  },
+  {
+    id: 1,
+    text: 'React Router',
+    svg: <img src={Router} alt="" />,
+  },
+
+  {
+    id: 1,
+    text: 'Styled Component',
+    svg: <img src={styled} alt="" />,
+  },
+];
+// Skill grids for project2
+
+export const projectSkillGrids2 = [
+  {
+    id: 1,
+    text: 'HTML5',
+    svg: <img src={HTML5} alt="" />,
+  },
+  {
+    id: 1,
+    text: 'CSS3',
+    svg: <img src={CSS3} alt="" />,
+  },
+  {
+    id: 1,
+    text: 'Javascript',
+    svg: <img src={JS} alt="" />,
+  },
+
+  {
+    id: 1,
+    text: 'BootStrap4',
+    svg: <img src={bootstrap} alt="" />,
+  },
+];
+
+// Skill grids for project3
+
+export const projectSkillGrids3 = [
+  {
+    id: 1,
+    text: 'HTML5',
+    svg: <img src={HTML5} alt="" />,
+  },
+  {
+    id: 1,
+    text: 'CSS3',
+    svg: <img src={CSS3} alt="" />,
+  },
+  {
+    id: 1,
+    text: 'Javascript',
+    svg: <img src={JS} alt="" />,
+  },
+  {
+    id: 1,
+    text: 'React',
+    svg: <img src={ReactJS} alt="" />,
+  },
+
+  {
+    id: 1,
+    text: 'GitHub',
+    svg: <img src={github} alt="" />,
+  },
+
+  {
+    id: 1,
+    text: 'REST API',
+    svg: <img src={rest} alt="" />,
+  },
+  {
+    id: 1,
+    text: 'React Router',
+    svg: <img src={Router} alt="" />,
+  },
+
+  {
+    id: 1,
+    text: 'Styled Component',
+    svg: <img src={styled} alt="" />,
+  },
+];
