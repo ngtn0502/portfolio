@@ -181,15 +181,31 @@ export const educationalList = [
     date: '2019',
     title: 'TOEIC (800/990)',
     subTitlt: 'IIG Vietnam',
-    sub: 'Certificate of reading and listening English proficiency ',
+    sub: 'Certificate of reading and listening English proficiency',
   },
   {
     id: 3,
-    date: '1999-forever',
-    title: 'Autodidact (Self-Learner)',
-    subTitlt: 'Udemy / Google / Internet',
+    date: 'April 2021 - Present',
+    title: 'Online Web Development Course',
+    subTitlt:
+      '•	The Complete JavaScript Course – Jonas Schmedtmann (The Udemy Platform) ',
+    subTitlt2:
+      '•	React: The Complete Guide – Maximilian Schwarzmuller (The Udemy Platform)',
+    subTitlt3:
+      '•	JavaScript: Understanding the Weird Parts – Anthony Alicea (The Udemy Platform)',
+    subTitlt4:
+      '•	React Tutorial and Projects Course - John Smilga (The Udemy Platform) ',
+    subTitlt5:
+      '•	JavaScript Algorithms and Data Structures Masterclass - Colt Steele (The Udemy Platform) ',
+  },
+  {
+    id: 4,
+    date: 'April 2021 - August 2021',
+    title: 'Front End Development Bootcamp',
+    subTitlt: 'Cybersoft Academy',
   },
 ];
+
 export const worksList = [
   {
     id: 1,

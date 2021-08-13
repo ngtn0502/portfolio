@@ -56,7 +56,10 @@ function AboutPage() {
         </motion.h2>
         <motion.div variants={childrenVariants}>
           <p className="qualification__subTitle">{item.subTitlt}</p>
-          {item.sub && <p className="qualification__subTitle">{item.sub}</p>}
+          {item.sub && <p className="qualification__subTitle">{item?.sub}</p>}
+          <p className="qualification__subTitle">{item?.subTitlt2}</p>
+          <p className="qualification__subTitle">{item?.subTitlt3}</p>
+          <p className="qualification__subTitle">{item?.subTitlt4}</p>
         </motion.div>
       </motion.div>
     </div>

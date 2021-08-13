@@ -8,7 +8,7 @@ function HomeAbout() {
     <Wrapper className="container">
       <div className="homeAbout">
         <div className="homeAbout__info">
-          <span>Let me introduce a bit about myself</span>
+          <span>Let me introduce a little bit about myself</span>
           <h1>ABOUT ME</h1>
           <p>
             I graduated as a civil engineering at Ho Chi Minh City University of
