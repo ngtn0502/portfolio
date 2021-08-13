@@ -131,7 +131,7 @@ p{
   .btn2{
     font-size: 2rem;
     background: transparent;
-    padding: 0.7em 2em;
+    padding: 0.5em 2em;
     border: 2px solid var(--gray-1);
     border-radius: var(--radius);
     display: inline-block;

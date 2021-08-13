@@ -11,6 +11,7 @@ import 'swiper/components/navigation/navigation.min.css';
 import corpCap from '../assets/images/HomeProject/corpCap.PNG';
 import githubCap from '../assets/images/HomeProject/githubCap.PNG';
 import interiorCap from '../assets/images/HomeProject/interiorCap.PNG';
+import ncinema from '../assets/images/ncinema.png';
 // import Swiper core and required modules
 import codingBg from '../assets/images/codingBg.jpg';
 // install Swiper modules
@@ -40,6 +41,28 @@ export default function App() {
           }}
           data-swiper-parallax="-23%"
         />
+        <SwiperSlide>
+          <div className="title" data-swiper-parallax="-300">
+            N-Cinema
+          </div>
+          <div className="subtitle" data-swiper-parallax="-200">
+            An Online Booking Ticket Websites
+          </div>
+          <div className="text" data-swiper-parallax="-100">
+            <Link to="/project" className="btn2">
+              Details
+            </Link>
+            <a
+              href="http://ncineplex.netlify.app/"
+              target="_blank"
+              className="btn2"
+              rel="noreferrer"
+            >
+              Go to site
+            </a>
+            <img src={ncinema} alt="" />
+          </div>
+        </SwiperSlide>
         <SwiperSlide>
           <div className="title" data-swiper-parallax="-300">
             G - Interior Store
@@ -82,28 +105,6 @@ export default function App() {
               Go to site
             </a>
             <img src={corpCap} alt="" />
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="title" data-swiper-parallax="-300">
-            Github Search
-          </div>
-          <div className="subtitle" data-swiper-parallax="-200">
-            A page
-          </div>
-          <div className="text" data-swiper-parallax="-100">
-            <Link to="/project" className="btn2">
-              Details
-            </Link>
-            <a
-              href="https://search-githubser.netlify.app/"
-              target="_blank"
-              className="btn2"
-              rel="noreferrer"
-            >
-              Go to site
-            </a>
-            <img src={githubCap} alt="" />
           </div>
         </SwiperSlide>
       </Swiper>

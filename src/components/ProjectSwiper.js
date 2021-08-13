@@ -23,7 +23,7 @@ import { HiViewGrid } from 'react-icons/hi';
 
 import gInterior from '../assets/images/gInterior.PNG';
 import corpVision from '../assets/images/corpVision.PNG';
-import gitHubUser from '../assets/images/gitHubUser.PNG';
+import ncinema2 from '../assets/images/ncinema2.png';
 import myPortfolio from '../assets/images/myPortfolio.PNG';
 // Import Swiper styles
 import 'swiper/swiper.min.css';
@@ -37,6 +37,8 @@ import {
   projectSkillGrids3,
   projectSkillGrids4,
   projectSkillGrids5,
+  projectSkillGridsCinema,
+  projectSkillGridsLibUICinema,
 } from '../utils/constant.js';
 
 // import Swiper core and required modules
@@ -71,19 +73,19 @@ export default function App() {
             <div className="project__item">
               <div className="project__img">
                 <a
-                  href="http://nhannguyen.netlify.app/"
+                  href="http://ncineplex.netlify.app/"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <img src={myPortfolio} alt="gInterior" />
+                  <img src={ncinema2} alt="gInterior" />
                 </a>
               </div>
               <div className="project__info">
-                <h2>My Portfolio</h2>
+                <h2>N - Cinema Website</h2>
               </div>
               <div>
                 <a
-                  href="http://nhannguyen.netlify.app/"
+                  href="http://ncineplex.netlify.app/"
                   target="_blank"
                   className="btn"
                   rel="noreferrer"
@@ -91,7 +93,7 @@ export default function App() {
                   View Project
                 </a>
                 <a
-                  href="https://github.com/ngtn0502/portfolio"
+                  href="https://github.com/ngtn0502/movieTicket-project"
                   target="_blank"
                   className="btn2"
                   rel="noreferrer"
@@ -108,8 +110,19 @@ export default function App() {
                 </span>
                 Overview
               </h2>
-              <p>A personal portfolio website</p>
-              <p />
+              <p>An Online Booking Ticket Website.</p>
+              <p>A web application for booking movie ticket online</p>
+              <p>Feature:</p>
+              <p>
+                {' '}
+                - Listing movies from movie api allow user book movie ticket
+                online.{' '}
+              </p>
+              <p>- Allow user login and sign up account.</p>
+              <p>
+                - Allow user manage their profile and booking/purchase history.
+              </p>
+              <p>- more and more...</p>
               <h2>
                 <span>
                   <BiCodeAlt />
@@ -120,9 +133,8 @@ export default function App() {
               <TechniqueSkills
                 styleP={styleP}
                 styleGrid={styleGrid}
-                skillGrids={projectSkillGrids4}
+                skillGrids={projectSkillGridsCinema}
               />
-              {/* Skill */}
               <h2>
                 <span>
                   <BiCodeAlt />
@@ -133,7 +145,7 @@ export default function App() {
               <TechniqueSkills
                 styleP={styleP}
                 styleGrid={styleGrid}
-                skillGrids={projectSkillGrids5}
+                skillGrids={projectSkillGridsLibUICinema}
               />
               {/* Skill */}
             </div>
@@ -184,8 +196,8 @@ export default function App() {
               </h2>
               <p>An Interior E-commerce Website.</p>
               <p>
-                This website allow customer can view list of sortable products
-                and buy it also
+                This website allows customers to view list of sortable products
+                and buy them
               </p>
               <h2>
                 <span>
@@ -203,6 +215,86 @@ export default function App() {
             </div>
           </div>
         </SwiperSlide>
+        {/* Project */}
+        <SwiperSlide>
+          <div>
+            {/* 1st Project */}
+            <div className="project__item">
+              <div className="project__img">
+                <a
+                  href="http://nhannguyen.netlify.app/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <img src={myPortfolio} alt="gInterior" />
+                </a>
+              </div>
+              <div className="project__info">
+                <h2>My Portfolio</h2>
+              </div>
+              <div>
+                <a
+                  href="http://nhannguyen.netlify.app/"
+                  target="_blank"
+                  className="btn"
+                  rel="noreferrer"
+                >
+                  View Project
+                </a>
+                <a
+                  href="https://github.com/ngtn0502/portfolio"
+                  target="_blank"
+                  className="btn2"
+                  rel="noreferrer"
+                >
+                  GitHub
+                </a>
+              </div>
+            </div>
+            {/* Brief */}
+            <div className="project__brief">
+              <h2>
+                <span>
+                  <HiViewGrid />
+                </span>
+                Overview
+              </h2>
+              <p>
+                A personal portfolio website, in charge of introducing about
+                what i am, and what i can do to contribute for interviewer's
+                company.
+              </p>
+              <p />
+              <h2>
+                <span>
+                  <BiCodeAlt />
+                </span>
+                Technology Used
+              </h2>
+              {/* Skill */}
+              <TechniqueSkills
+                styleP={styleP}
+                styleGrid={styleGrid}
+                skillGrids={projectSkillGrids4}
+              />
+              {/* Skill */}
+              <h2>
+                <span>
+                  <BiCodeAlt />
+                </span>
+                UI Library Used
+              </h2>
+              {/* Skill */}
+              <TechniqueSkills
+                styleP={styleP}
+                styleGrid={styleGrid}
+                skillGrids={projectSkillGrids5}
+              />
+              {/* Skill */}
+            </div>
+          </div>
+        </SwiperSlide>
+
         <SwiperSlide>
           <div>
             {/* 2nd Project */}
@@ -248,8 +340,8 @@ export default function App() {
               </h2>
               <p>A landing page.</p>
               <p>
-                This website help corporation introducing about what they are
-                provide to customer
+                This website helps corporation introduce about what they provide
+                to customers
               </p>
               <h2>
                 <span>
@@ -262,68 +354,6 @@ export default function App() {
                 styleP={styleP}
                 styleGrid={styleGrid}
                 skillGrids={projectSkillGrids2}
-              />
-              {/* Skill */}
-            </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div>
-            {/* 3rd Project */}
-            <div className="project__item">
-              <div className="project__img">
-                <a
-                  href="https://search-githubser.netlify.app/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <img src={gitHubUser} alt="gInterior" />
-                </a>
-              </div>
-              <div className="project__info">
-                <h2>Github User Search Page</h2>
-              </div>
-              <div>
-                <a
-                  href="https://search-githubser.netlify.app/"
-                  target="_blank"
-                  className="btn"
-                  rel="noreferrer"
-                >
-                  View Project
-                </a>
-                <a
-                  href="https://github.com/ngtn0502/ReactJS---githubUser"
-                  target="_blank"
-                  className="btn2"
-                  rel="noreferrer"
-                >
-                  GitHub
-                </a>
-              </div>
-            </div>
-            <div className="project__brief">
-              <h2>
-                <span>
-                  <HiViewGrid />
-                </span>
-                Overview
-              </h2>
-              <p>
-                This website allow people searching for specific Github User and
-                provide a overview informative chart about this user.
-              </p>
-              <h2 className="techStack__title">
-                <span>
-                  <BiCodeAlt />
-                </span>
-                Technology Used
-              </h2>
-              {/* Skill */}
-              <TechniqueSkills
-                styleP={styleP}
-                styleGrid={styleGrid}
-                skillGrids={projectSkillGrids3}
               />
               {/* Skill */}
             </div>
@@ -413,13 +443,14 @@ const Wrapper = styled.div`
       flex-wrap: wrap;
       .btn2 {
         font-size: 1.5rem;
-        padding: 0.5em 1.5em;
+        padding: 0.5em 1.5em !important;
       }
     }
   }
   .btn2 {
     display: flex;
     align-items: center;
+    margin-top: 1rem;
     svg {
       margin-left: 1rem;
       width: 2.5rem;

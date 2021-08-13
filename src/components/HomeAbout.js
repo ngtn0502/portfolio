@@ -11,7 +11,7 @@ function HomeAbout() {
           <span>Let me introduce a bit about myself</span>
           <h1>ABOUT ME</h1>
           <p>
-            I studying as a civil engineering at Ho Chi Minh City University of
+            I graduated as a civil engineering at Ho Chi Minh City University of
             Technology. However, i based my career as a Developer, since my real
             passion is coding. <br /> See my previous work history on Project
             page or my Github.

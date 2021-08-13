@@ -28,6 +28,7 @@ import styled from '../assets/images/Logo/styled.png';
 import swiperJS from '../assets/images/Logo/swiperJS.PNG';
 import typedJS from '../assets/images/Logo/typedJS.png';
 import framerMotion from '../assets/images/Logo/framerMotion.PNG';
+import mui from '../assets/images/Logo/materialUI.png';
 
 import corpCap from '../assets/images/HomeProject/corpCap.PNG';
 import githubCap from '../assets/images/HomeProject/githubCap.PNG';
@@ -310,13 +311,51 @@ export const homeProjectList = [
     text: 'E-Commerce Interior Page',
     img: interiorCap,
   },
-  {
-    id: 1,
-    text: 'Github Search Page',
-    img: githubCap,
-  },
 ];
 
+export const projectSkillGridsCinema = [
+  {
+    id: 1,
+    text: 'HTML5',
+    svg: <img src={HTML5} alt="" />,
+  },
+  {
+    id: 1,
+    text: 'CSS3',
+    svg: <img src={CSS3} alt="" />,
+  },
+  {
+    id: 1,
+    text: 'Javascript',
+    svg: <img src={JS} alt="" />,
+  },
+  {
+    id: 1,
+    text: 'React',
+    svg: <img src={ReactJS} alt="" />,
+  },
+  {
+    id: 1,
+    text: 'Redux/Redux Thunk',
+    svg: <img src={redux} alt="" />,
+  },
+  {
+    id: 1,
+    text: 'REST API',
+    svg: <img src={rest} alt="" />,
+  },
+  {
+    id: 1,
+    text: 'React Router',
+    svg: <img src={Router} alt="" />,
+  },
+
+  {
+    id: 1,
+    text: 'Styled Component',
+    svg: <img src={styled} alt="" />,
+  },
+];
 // Skill grids for project
 
 export const projectSkillGrids = [
@@ -484,5 +523,24 @@ export const projectSkillGrids5 = [
     id: 1,
     text: 'Typed JS',
     svg: <img src={typedJS} alt="" />,
+  },
+];
+// UI Lib grids for cinema
+
+export const projectSkillGridsLibUICinema = [
+  {
+    id: 1,
+    text: 'Material UI',
+    svg: <img src={mui} alt="" />,
+  },
+  {
+    id: 1,
+    text: 'Framer Motion',
+    svg: <img src={framerMotion} alt="" />,
+  },
+  {
+    id: 1,
+    text: 'Swiper JS',
+    svg: <img src={swiperJS} alt="" />,
   },
 ];

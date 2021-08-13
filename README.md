@@ -37,3 +37,15 @@ For introduce about myself and my project.
 ##### uuid - https://github.com/uuidjs/uuid
 
 ##### styled-components -
+
+##### ReactJS
+
+##### React Router
+
+##### Redux - (update soon)
+
+##### Styled Component
+
+##### HTML5
+
+##### CSS3
