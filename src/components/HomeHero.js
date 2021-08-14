@@ -23,9 +23,17 @@ export default function HomeHero() {
           I code beautifully simple things, and I love what I do.
         </HomteInfor>
         <div className=" hero__btn">
+          <a
+            href="https://drive.google.com/file/d/1Rihp9opaiio9W5AJANv2FqSwbwg7tuvs/view?usp=sharing"
+            target="_blank"
+            className="btn btn2"
+            rel="noreferrer"
+          >
+            Down load my CV
+          </a>{' '}
           <Link to="/project" className="btn">
             see my work
-          </Link>
+          </Link>{' '}
         </div>
       </div>
       <div className="hero__social">

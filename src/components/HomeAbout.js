@@ -20,9 +20,14 @@ function HomeAbout() {
             <Link to="/about" className="btn">
               More...
             </Link>
-            <Link to="/project" className="btn btn2">
+            <a
+              href="https://drive.google.com/file/d/1Rihp9opaiio9W5AJANv2FqSwbwg7tuvs/view?usp=sharing"
+              target="_blank"
+              className="btn btn2"
+              rel="noreferrer"
+            >
               Down load my CV
-            </Link>
+            </a>
           </div>
         </div>
 
