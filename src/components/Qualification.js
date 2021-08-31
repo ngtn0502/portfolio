@@ -60,6 +60,8 @@ function AboutPage() {
           <p className="qualification__subTitle">{item?.subTitlt2}</p>
           <p className="qualification__subTitle">{item?.subTitlt3}</p>
           <p className="qualification__subTitle">{item?.subTitlt4}</p>
+          <p className="qualification__subTitle">{item?.subTitlt5}</p>
+          <p className="qualification__subTitle">{item?.subTitlt6}</p>
         </motion.div>
       </motion.div>
     </div>
@@ -237,7 +239,7 @@ const Wrapper = styled.div`
     height: 160%;
     width: 0.3rem;
     background-color: var(--gray-1);
-    transform: translate(150%, -10%);
+    transform: translate(150%, -5%);
   }
 
   /* .qualification__line {

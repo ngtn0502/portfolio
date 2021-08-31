@@ -81,6 +81,7 @@ const Wrapper = styled.div`
     margin-top: 10rem;
   }
   .about__firstSection {
+    overflow: hidden;
     .category {
       padding-top: 1.5rem;
     }

@@ -197,12 +197,7 @@ export const educationalList = [
       '•	React Tutorial and Projects Course - John Smilga (The Udemy Platform) ',
     subTitlt5:
       '•	JavaScript Algorithms and Data Structures Masterclass - Colt Steele (The Udemy Platform) ',
-  },
-  {
-    id: 4,
-    date: 'April 2021 - August 2021',
-    title: 'Front End Development Bootcamp',
-    subTitlt: 'Cybersoft Academy',
+    subTitlt6: '•	Front End Development Bootcamp (Cybersoft Academy)',
   },
 ];
 
