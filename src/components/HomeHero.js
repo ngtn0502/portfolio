@@ -29,7 +29,7 @@ export default function HomeHero() {
             className="btn btn2"
             rel="noreferrer"
           >
-            Down load my CV
+            download my résumé
           </a>{' '}
           <Link to="/project" className="btn">
             see my work
