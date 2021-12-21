@@ -197,22 +197,15 @@ export const educationalList = [
       '•	React Tutorial and Projects Course - John Smilga (The Udemy Platform) ',
     subTitlt5:
       '•	JavaScript Algorithms and Data Structures Masterclass - Colt Steele (The Udemy Platform) ',
-    subTitlt6: '•	Front End Development Bootcamp (Cybersoft Academy)',
   },
 ];
 
 export const worksList = [
   {
     id: 1,
-    date: '2021-present',
-    title: 'You are person who decide it...',
-    subTitlt: 'Front End Developer',
-  },
-  {
-    id: 2,
-    date: '2021-present',
-    title: 'You will fill it...',
-    subTitlt: 'Web Developer',
+    date: '9/2021-present',
+    title: 'FPT Software',
+    subTitlt: 'Associate Software Engineer',
   },
 ];
 
