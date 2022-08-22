@@ -8,7 +8,7 @@ function Introduce() {
         <div className="introduce__subTitle">
           Hi, I am <span className="subTitle">Nhan Nguyen</span>
         </div>
-        <h2>A Front End Developer</h2>
+        <h2>A Full-Stack Developer</h2>
         <p>I am from Ben Tre City, Viet Nam.</p>
         <hr />
         <p>
