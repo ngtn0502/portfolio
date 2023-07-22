@@ -157,7 +157,7 @@ export const socials = [
 export const contacts = [
   {
     id: 1,
-    text: '+0948163138',
+    text: '+094816313x',
     image: <BsPhone />,
   },
   {
@@ -167,7 +167,7 @@ export const contacts = [
   },
   {
     id: 3,
-    text: '10 District, HCM City',
+    text: 'HCM City',
     image: <BiMap />,
   },
 ];
