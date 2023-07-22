@@ -31,7 +31,7 @@ import framerMotion from '../assets/images/Logo/framerMotion.PNG';
 import mui from '../assets/images/Logo/materialUI.png';
 import angular from '../assets/images/Logo/angular.svg';
 import mongo from '../assets/images/Logo/mongo.png';
-import sql from '../assets/images/Logo/sql.png';
+import sql from '../assets/images/Logo/sql.jpg';
 import net from '../assets/images/Logo/net.png';
 
 import corpCap from '../assets/images/HomeProject/corpCap.PNG';
