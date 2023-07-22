@@ -29,6 +29,10 @@ import swiperJS from '../assets/images/Logo/swiperJS.PNG';
 import typedJS from '../assets/images/Logo/typedJS.png';
 import framerMotion from '../assets/images/Logo/framerMotion.PNG';
 import mui from '../assets/images/Logo/materialUI.png';
+import angular from '../assets/images/Logo/angular.svg';
+import mongo from '../assets/images/Logo/mongo.png';
+import sql from '../assets/images/Logo/sql.png';
+import net from '../assets/images/Logo/net.png';
 
 import corpCap from '../assets/images/HomeProject/corpCap.PNG';
 import githubCap from '../assets/images/HomeProject/githubCap.PNG';
@@ -236,8 +240,23 @@ export const advantages = [
 export const skillGrids = [
   {
     id: 1,
-    text: 'HTML5',
-    svg: <img src={HTML5} alt="" />,
+    text: 'Angular',
+    svg: <img src={angular} alt="" />,
+  },
+  {
+    id: 1,
+    text: '.NET',
+    svg: <img src={net} alt="" />,
+  },
+  {
+    id: 1,
+    text: 'SQL',
+    svg: <img src={sql} alt="" />,
+  },
+  {
+    id: 1,
+    text: 'Mongo',
+    svg: <img src={mongo} alt="" />,
   },
   {
     id: 1,
