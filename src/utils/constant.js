@@ -178,7 +178,7 @@ export const educationalList = [
     id: 1,
     date: '2017-2021',
     title: 'Ho Chi Minh City University of Technology',
-    subTitlt: 'Civil Engineering',
+    subTitlt: 'Engineering',
   },
   {
     id: 2,
@@ -190,17 +190,7 @@ export const educationalList = [
   {
     id: 3,
     date: 'April 2021 - Present',
-    title: 'Online Web Development Course',
-    subTitlt:
-      '•	The Complete JavaScript Course – Jonas Schmedtmann (The Udemy Platform) ',
-    subTitlt2:
-      '•	React: The Complete Guide – Maximilian Schwarzmuller (The Udemy Platform)',
-    subTitlt3:
-      '•	JavaScript: Understanding the Weird Parts – Anthony Alicea (The Udemy Platform)',
-    subTitlt4:
-      '•	React Tutorial and Projects Course - John Smilga (The Udemy Platform) ',
-    subTitlt5:
-      '•	JavaScript Algorithms and Data Structures Masterclass - Colt Steele (The Udemy Platform) ',
+    title: 'Keep learning / Self Taught',
   },
 ];
 

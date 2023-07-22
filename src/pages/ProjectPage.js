@@ -14,7 +14,7 @@ function ProjectPage() {
     >
       <Wrapper className="container">
         <div className="title">
-          <TypedReactHooksDemo string="some of my recent work" />
+          <TypedReactHooksDemo string="some of my recent work - Personal Project" />
           <h2>PROJECT</h2>
         </div>
         <ProjectSwiper />
