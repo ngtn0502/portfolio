@@ -203,9 +203,9 @@ export const educationalList = [
 export const worksList = [
   {
     id: 1,
-    date: '9/2021-present',
+    date: '2021-present',
     title: 'FPT Software',
-    subTitlt: 'Associate Software Engineer',
+    subTitlt: 'Software Engineer',
   },
 ];
 

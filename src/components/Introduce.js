@@ -9,7 +9,7 @@ function Introduce() {
           Hi, I am <span className="subTitle">Nhan Nguyen</span>
         </div>
         <h2>A Full-Stack Developer</h2>
-        <p>I am from Ben Tre City, Viet Nam.</p>
+        <p>Ho Chi Minh City, VietNam.</p>
         <hr />
         <p>
           Highly adaptable, result-driven problem solver seeking to build
