@@ -24,7 +24,7 @@ export default function HomeHero() {
         </HomteInfor>
         <div className=" hero__btn">
           <a
-            href="https://drive.google.com/file/d/1Rihp9opaiio9W5AJANv2FqSwbwg7tuvs/view?usp=sharing"
+            href=""
             target="_blank"
             className="btn btn2"
             rel="noreferrer"

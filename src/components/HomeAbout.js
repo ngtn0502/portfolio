@@ -11,9 +11,7 @@ function HomeAbout() {
           <span>Let me introduce a little bit about myself</span>
           <h1>ABOUT ME</h1>
           <p>
-            I graduated as a civil engineering at Ho Chi Minh City University of
-            Technology. However, i based my career as a Developer, since my deep
-            passion is coding. <br /> See my previous work history on Project
+          I earned my bachelor's degree from Ho Chi Minh City University of Technology and decided to pursue a career as a Developer due to my profound passion for coding. <br /> See my previous work history on Project
             page or my Github.
           </p>
           <div className="homeAbout__btn">
@@ -21,7 +19,7 @@ function HomeAbout() {
               More...
             </Link>
             <a
-              href="https://drive.google.com/file/d/1Rihp9opaiio9W5AJANv2FqSwbwg7tuvs/view?usp=sharing"
+              href=""
               target="_blank"
               className="btn btn2"
               rel="noreferrer"
