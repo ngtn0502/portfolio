@@ -19,8 +19,7 @@ function HomeAbout() {
               More...
             </Link>
             <a
-              href=""
-              target="_blank"
+              href="https://www.linkedin.com/in/nhan-nguyen-thanh-a708b1251/"
               className="btn btn2"
               rel="noreferrer"
             >
