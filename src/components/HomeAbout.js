@@ -12,9 +12,9 @@ function HomeAbout() {
           <h1>ABOUT ME</h1>
           <p>
           I earned my bachelor degree from Ho Chi Minh City University of
-          Technology and decided to pursue a career as a Developer due to my profound 
-          passion for coding. <br /> See my previous work history on Project
-            page or my Github.
+          Technology and decided to pursue a career as a Developer due to my
+          profound passion for coding. <br /> See my previous work history 
+          on Project page or my Github.
           </p>
           <div className="homeAbout__btn">
             <Link to="/about" className="btn">
