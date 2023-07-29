@@ -176,7 +176,7 @@ export const contacts = [
 export const educationalList = [
   {
     id: 1,
-    date: '2017-2021',
+    date: '2021',
     title: 'Ho Chi Minh City University of Technology',
     subTitlt: 'Engineering',
   },
@@ -189,7 +189,14 @@ export const educationalList = [
   },
   {
     id: 3,
-    date: 'April 2021 - Present',
+    date: '202x',
+    title: 'AWS Certified Cloud Practitioner',
+    subTitlt: 'AWS',
+    sub: 'The AWS Certified Cloud Practitioner validates foundational, high-level understanding of AWS Cloud, services, and terminology.',
+  },
+  {
+    id: 4,
+    date: 'Present',
     title: 'Keep learning / Self Taught',
   },
 ];
@@ -197,7 +204,7 @@ export const educationalList = [
 export const worksList = [
   {
     id: 1,
-    date: '2021-present',
+    date: 'Present',
     title: 'FPT Software',
     subTitlt: 'Software Engineer',
   },
