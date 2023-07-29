@@ -19,9 +19,7 @@ export default function HomeHero() {
         <img src={heroPicture} alt="person" />
       </div>
       <div className="hero__infor">
-        <HomteInfor>
-          "Talk is cheap show me the code."
-        </HomteInfor>
+        <HomteInfor>"Talk is cheap show me the code."</HomteInfor>
         <div className=" hero__btn">
           <a
             href="https://www.google.com/"
