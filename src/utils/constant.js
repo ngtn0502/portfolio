@@ -118,12 +118,12 @@ export const media = [
   {
     id: 1,
     text: 'fb',
-    url: 'https://www.facebook.com/thanhnhan99s/',
+    url: 'https://www.google.com/',
   },
   {
     id: 2,
     text: 'git',
-    url: 'https://github.com/ngtn0502',
+    url: 'https://www.google.com/',
   },
 ];
 
@@ -131,25 +131,25 @@ export const socials = [
   {
     id: 1,
     text: 'fb',
-    url: 'https://www.facebook.com/thanhnhan99s/',
+    url: 'https://www.google.com/',
     image: <FaFacebookSquare />,
   },
   {
     id: 2,
     text: 'git',
-    url: 'https://github.com/ngtn0502',
+    url: 'https://www.google.com/',
     image: <FaGithubSquare />,
   },
   {
     id: 3,
     text: 'git',
-    url: 'https://github.com/ngtn0502',
+    url: 'https://www.google.com/',
     image: <FaTwitterSquare />,
   },
   {
     id: 4,
     text: 'git',
-    url: 'https://github.com/ngtn0502',
+    url: 'https://www.google.com/',
     image: <FaLinkedin />,
   },
 ];

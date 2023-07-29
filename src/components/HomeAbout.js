@@ -21,7 +21,7 @@ function HomeAbout() {
               More...
             </Link>
             <a
-              href="https://www.linkedin.com/in/nhan-nguyen-thanh-a708b1251/"
+              href="https://www.google.com/"
               className="btn btn2"
               rel="noreferrer"
             >
