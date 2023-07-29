@@ -20,7 +20,7 @@ export default function HomeHero() {
       </div>
       <div className="hero__infor">
         <HomteInfor>
-          I code beautifully simple things, and I love what I do.
+          "Talk is cheap show me the code."
         </HomteInfor>
         <div className=" hero__btn">
           <a
