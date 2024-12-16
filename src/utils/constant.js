@@ -204,8 +204,14 @@ export const educationalList = [
 export const worksList = [
   {
     id: 1,
-    date: 'Present',
+    date: '2021 - 2023',
     title: 'FPT Software',
+    subTitlt: 'Software Engineer / Senior Software Engineer',
+  },
+  {
+    id: 2,
+    date: '2024',
+    title: 'Hussle Tech',
     subTitlt: 'Software Engineer',
   },
 ];
