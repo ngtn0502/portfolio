@@ -211,7 +211,7 @@ export const worksList = [
   {
     id: 2,
     date: '2024',
-    title: 'Hussle Tech',
+    title: 'XXXX',
     subTitlt: 'Software Engineer',
   },
 ];
